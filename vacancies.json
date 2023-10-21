@@ -1,0 +1,3345 @@
+{
+    "items": [
+        {
+            "id": "88389539",
+            "premium": false,
+            "name": "Инженер-конструктор (станочные приспособления)",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 110000,
+                "to": null,
+                "currency": "RUR",
+                "gross": true
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "проспект Салавата Юлаева",
+                "building": "89",
+                "lat": 54.750167,
+                "lng": 56.014468,
+                "description": null,
+                "raw": "Уфа, проспект Салавата Юлаева, 89",
+                "metro": null,
+                "metro_stations": [],
+                "id": "12510678"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-19T11:42:22+0300",
+            "created_at": "2023-10-19T11:42:22+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=88389539",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/88389539?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/88389539",
+            "relations": [],
+            "employer": {
+                "id": "55505",
+                "name": "Клио-Софт",
+                "url": "https://api.hh.ru/employers/55505",
+                "alternate_url": "https://hh.ru/employer/55505",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/6227418.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/1151739.png",
+                    "240": "https://hhcdn.ru/employer-logo/6227419.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=55505",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Уверенные знания ЕСКД. Опыт проектирования станочных приспособлений. Знание принципов работы механообрабатывающего оборудования (преимущественно токарная, фрезерная, шлифовальная группы). Знание методов базирования...",
+                "responsibility": "Проектирование станочной технологической оснастки по ТЗ от технологов в среде NX (приспособления для базирования и зажима заготовок при механообработке). "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "moreThan6",
+                "name": "Более 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "84154384",
+            "premium": false,
+            "name": "Начинающий инженер-проектировщик",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Рихарда Зорге",
+                "building": "33/1",
+                "lat": 54.757566,
+                "lng": 55.992126,
+                "description": null,
+                "raw": "Уфа, улица Рихарда Зорге, 33/1",
+                "metro": null,
+                "metro_stations": [],
+                "id": "2953144"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-17T13:02:57+0300",
+            "created_at": "2023-10-17T13:02:57+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=84154384",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/84154384?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/84154384",
+            "relations": [],
+            "employer": {
+                "id": "1440117",
+                "name": "ГК БИТ",
+                "url": "https://api.hh.ru/employers/1440117",
+                "alternate_url": "https://hh.ru/employer/1440117",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/581171.PNG",
+                    "240": "https://hhcdn.ru/employer-logo/2765940.png",
+                    "90": "https://hhcdn.ru/employer-logo/2765939.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1440117",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Уверенное пользование ПК, свободное владение программными продуктами AutoCAD,eplan electric , MS Office.",
+                "responsibility": "Разработка технической документации согласно ГОСТ 34.201: схем электрических принципиальных, перечней элементов, схем подключений, чертежей внешнего вида, спецификаций оборудования, структурных..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "noExperience",
+                "name": "Нет опыта"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "84540791",
+            "premium": false,
+            "name": "Ведущий инженер ПТО",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-09T07:49:50+0300",
+            "created_at": "2023-10-09T07:49:50+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=84540791",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/84540791?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/84540791",
+            "relations": [],
+            "employer": {
+                "id": "614764",
+                "name": "Экситон - автоматика, НПФ",
+                "url": "https://api.hh.ru/employers/614764",
+                "alternate_url": "https://hh.ru/employer/614764",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/935399.jpg",
+                    "240": "https://hhcdn.ru/employer-logo/4182145.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/4182144.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=614764",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Опыт работы с нефтедобывающими компаниями или компаниями АО \"Транснефть\"; ПАО \"Лукойл\". Знание оборудования и материалов, оборудования КИП. ",
+                "responsibility": "Ведение исполнительной документации, подписание форм КС-2, защита выполненных объемов работ. Проработка технических решений, выбор оборудования, материалов и согласование с..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "flyInFlyOut",
+                "name": "Вахтовый метод"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "85300407",
+            "premium": false,
+            "name": "Инженер-конструктор НКУ",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-09-22T08:37:19+0300",
+            "created_at": "2023-09-22T08:37:19+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=85300407",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/85300407?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/85300407",
+            "relations": [],
+            "employer": {
+                "id": "1128006",
+                "name": "Компания КРУС-Запад",
+                "url": "https://api.hh.ru/employers/1128006",
+                "alternate_url": "https://hh.ru/employer/1128006",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/242390.jpg",
+                    "90": "https://hhcdn.ru/employer-logo/1412237.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1412238.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1128006",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Знание в области электротехники, нормативной документации (ПУЭ, ГОСТ). Умение читать электрические схемы. Уверенный пользователь ПК. ",
+                "responsibility": "Разработка электрических схем, сборочных чертежей шкафов НКУ, на основании ТЗ. Формирование полного комплекта конструкторской документации: обеспечение соответствия разрабатываемых конструкций техническим..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "76336448",
+            "premium": false,
+            "name": "Ведущий Инженер–наладчик АСУТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 100000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-03T07:17:59+0300",
+            "created_at": "2023-10-03T07:17:59+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=76336448",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/76336448?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/76336448",
+            "relations": [],
+            "employer": {
+                "id": "614764",
+                "name": "Экситон - автоматика, НПФ",
+                "url": "https://api.hh.ru/employers/614764",
+                "alternate_url": "https://hh.ru/employer/614764",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/935399.jpg",
+                    "240": "https://hhcdn.ru/employer-logo/4182145.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/4182144.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=614764",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее профессиональное (техническое) образование. Знание общих принципы АСУ ТП, систем телемеханики, шкафного и серверного оборудования и его монтажа, основы электроники...",
+                "responsibility": "Проведение испытаний шкафов автоматики. Выполнение пуско-наладочных и шеф-монтажных работ шкафов автоматики, охранно-пожарных сигнализаций, СКУД, систем видеонаблюдения. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "79857737",
+            "premium": false,
+            "name": "Инженер-проектировщик (1 категории)",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "Комсомольская улица",
+                "building": "98",
+                "lat": 54.749725,
+                "lng": 56.004595,
+                "description": null,
+                "raw": "Уфа, Комсомольская улица, 98",
+                "metro": null,
+                "metro_stations": [],
+                "id": "140961"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-20T14:14:07+0300",
+            "created_at": "2023-10-20T14:14:07+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79857737",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/79857737?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/79857737",
+            "relations": [],
+            "employer": {
+                "id": "614764",
+                "name": "Экситон - автоматика, НПФ",
+                "url": "https://api.hh.ru/employers/614764",
+                "alternate_url": "https://hh.ru/employer/614764",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/935399.jpg",
+                    "240": "https://hhcdn.ru/employer-logo/4182145.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/4182144.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=614764",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Знание номенклатуры отечественных и зарубежных КИПиА, АСУТП, контроллерного и периферийного оборудования. Знание принципов работы КИПиА. Знание структур и принципов построения...",
+                "responsibility": "Разработка конструкторской документации шкафов автоматики (АСУ ТП) на основе проектной документации. Разработка эксплуатационной документации на АСУ ТП. Контроль процесса сборки..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86779848",
+            "premium": false,
+            "name": "Инженер-схемотехник",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 50000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Чернышевского",
+                "building": "82",
+                "lat": 54.729335,
+                "lng": 55.941318,
+                "description": null,
+                "raw": "Уфа, улица Чернышевского, 82",
+                "metro": null,
+                "metro_stations": [],
+                "id": "3856908"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-13T10:01:36+0300",
+            "created_at": "2023-10-13T10:01:36+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86779848",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86779848?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86779848",
+            "relations": [],
+            "employer": {
+                "id": "45643",
+                "name": "НПП Полигон",
+                "url": "https://api.hh.ru/employers/45643",
+                "alternate_url": "https://hh.ru/employer/45643",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1555765.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1555766.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/278317.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=45643",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Опыт работы в любой ECAD системе. - Опыт разработки принципиальных схем (цифровая и аналоговая схемотехника, схемы питания, прочее). - Приветствуется опыт разработки...",
+                "responsibility": "Разработка электрических схем (функциональных, структурных, принципиальных) на отечественной и иностранной компонентной базе. - Подбор необходимой элементной базы. - Разработка технической документации (подготовка..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "noExperience",
+                "name": "Нет опыта"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86925474",
+            "premium": false,
+            "name": "Инженер-конструктор пресс-форм",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 85000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "проспект Октября",
+                "building": "4/2Е",
+                "lat": 54.740314,
+                "lng": 55.988398,
+                "description": null,
+                "raw": "Уфа, проспект Октября, 4/2Е",
+                "metro": null,
+                "metro_stations": [],
+                "id": "5928172"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-09T11:28:20+0300",
+            "created_at": "2023-10-09T11:28:20+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86925474",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86925474?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86925474",
+            "relations": [],
+            "employer": {
+                "id": "668351",
+                "name": "Уфанет",
+                "url": "https://api.hh.ru/employers/668351",
+                "alternate_url": "https://hh.ru/employer/668351",
+                "logo_urls": {
+                    "240": "https://hhcdn.ru/employer-logo/3570364.png",
+                    "90": "https://hhcdn.ru/employer-logo/3570363.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/782368.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=668351",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Инженерно-техническое образование. Опыт работы по проектированию изделий из пластмасс и металлов. Умение работать в CAD программах (Компас, Solid Works...",
+                "responsibility": "Разработкой новых изделий из пластмасс и металлов. Внесением изменений в изготавливаемые изделия. Участием в поиске и подборе производителей изделий. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87270229",
+            "premium": false,
+            "name": "Инженер в тендерный отдел промышленных систем электрообогрева / электроснабжения",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 60000,
+                "to": 80000,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Блюхера",
+                "building": "1/2",
+                "lat": 54.778253,
+                "lng": 56.021169,
+                "description": null,
+                "raw": "Уфа, улица Блюхера, 1/2",
+                "metro": null,
+                "metro_stations": [],
+                "id": "853382"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-09-25T10:53:55+0300",
+            "created_at": "2023-09-25T10:53:55+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87270229",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87270229?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87270229",
+            "relations": [],
+            "employer": {
+                "id": "1128006",
+                "name": "Компания КРУС-Запад",
+                "url": "https://api.hh.ru/employers/1128006",
+                "alternate_url": "https://hh.ru/employer/1128006",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/242390.jpg",
+                    "90": "https://hhcdn.ru/employer-logo/1412237.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1412238.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1128006",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Профильное высшее образование. Знание нормативной документации и ГОСТов. Знание английского/немецкого языков - базовый уровень, с переводчиком. Знание программного пакета MS...",
+                "responsibility": "Подготовка технических предложений систем промышленного электрообогрева/электроснабжения. Подготовка технических заданий. Снятие замечаний согласующих организаций, Заказчика. Разработка ТУ. Разработка инструкций."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "noExperience",
+                "name": "Нет опыта"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "81936879",
+            "premium": false,
+            "name": "Инженер-конструктор",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 35000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "Комсомольская",
+                "building": "122Б",
+                "lat": 54.755591,
+                "lng": 56.010183,
+                "description": null,
+                "raw": "Уфа, Комсомольская, 122Б",
+                "metro": null,
+                "metro_stations": [],
+                "id": "81449"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-19T10:00:23+0300",
+            "created_at": "2023-10-19T10:00:23+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=81936879",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/81936879?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/81936879",
+            "relations": [],
+            "employer": {
+                "id": "73358",
+                "name": "Кристалл, МТУ",
+                "url": "https://api.hh.ru/employers/73358",
+                "alternate_url": "https://hh.ru/employer/73358",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/792842.png",
+                    "90": "https://hhcdn.ru/employer-logo/3612255.png",
+                    "240": "https://hhcdn.ru/employer-logo/3612256.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=73358",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Знание ЕСКД, СПДС. Опыт работы в программе \"Компас\", \"Autocad\". Знание металлоконструкций и опыт проектирования металлоконструкций в строительстве...",
+                "responsibility": "Разработка РКД в соответствии с ЕСКД, составление спецификаций, разработка проектной, рабочей документации, подготовка технологический решений."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "noExperience",
+                "name": "Нет опыта"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "85118579",
+            "premium": false,
+            "name": "Инженер-конструктор",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Чернышевского",
+                "building": "82",
+                "lat": 54.729335,
+                "lng": 55.941318,
+                "description": null,
+                "raw": "Уфа, улица Чернышевского, 82",
+                "metro": null,
+                "metro_stations": [],
+                "id": "3856908"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-13T10:01:41+0300",
+            "created_at": "2023-10-13T10:01:41+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=85118579",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/85118579?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/85118579",
+            "relations": [],
+            "employer": {
+                "id": "45643",
+                "name": "НПП Полигон",
+                "url": "https://api.hh.ru/employers/45643",
+                "alternate_url": "https://hh.ru/employer/45643",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1555765.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1555766.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/278317.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=45643",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Опыт работы с САПР: SolidWorks, Компас 3D, Autocad, СorelDraw и другие. - Знание ЕСКД, ГОСТ, правил нормоконтроля. - Умение работать с...",
+                "responsibility": "Разработка сборочных единиц, деталей радиоэлектронной аппаратуры. - 3-D моделирование. - Разработка комплекта конструкторской документации в соответствии с ЕСКД. - Проведение (внесение) изменений..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86373573",
+            "premium": false,
+            "name": "Инженер ПТО / строитель",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": null,
+                "street": null,
+                "building": null,
+                "lat": null,
+                "lng": null,
+                "description": null,
+                "raw": "Уфа, ул. Пушкина 33/2, 2 этаж",
+                "metro": null,
+                "metro_stations": [],
+                "id": "152526"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-14T13:22:34+0300",
+            "created_at": "2023-10-14T13:22:34+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86373573",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86373573?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86373573",
+            "relations": [],
+            "employer": {
+                "id": "998174",
+                "name": "Форт Диалог",
+                "url": "https://api.hh.ru/employers/998174",
+                "alternate_url": "https://hh.ru/employer/998174",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/795730.png",
+                    "90": "https://hhcdn.ru/employer-logo/3623807.png",
+                    "240": "https://hhcdn.ru/employer-logo/3623808.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=998174",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Техническое образование (связь, энергетика). Предпочтительны знания в области систем технической безопасности, связи. Стаж работы от 2-х лет. ",
+                "responsibility": "Проверка соответствия ПД/РД. Обследование зданий, проверка выполненных объемов. Работа с подрядчиками (проверка исполнительной документации). Комплектование исполнительной документации. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "79385846",
+            "premium": false,
+            "name": "Инженер-проектировщик систем безопасности",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 90000,
+                "to": 110000,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "проспект Октября",
+                "building": "4/2Е",
+                "lat": 54.740314,
+                "lng": 55.988398,
+                "description": null,
+                "raw": "Уфа, проспект Октября, 4/2Е",
+                "metro": null,
+                "metro_stations": [],
+                "id": "5928172"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-18T07:46:17+0300",
+            "created_at": "2023-10-18T07:46:17+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79385846",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/79385846?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/79385846",
+            "relations": [],
+            "employer": {
+                "id": "668351",
+                "name": "Уфанет",
+                "url": "https://api.hh.ru/employers/668351",
+                "alternate_url": "https://hh.ru/employer/668351",
+                "logo_urls": {
+                    "240": "https://hhcdn.ru/employer-logo/3570364.png",
+                    "90": "https://hhcdn.ru/employer-logo/3570363.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/782368.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=668351",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Опыт проектирования, эксплуатации или пуско-наладки не менее 2-х лет, следующих систем:",
+                "responsibility": "Разработкой/проверкой документации на стадиях П, Р по системам безопасности. Обследованием закрепленного объекта. Сбором исходных данных для проектирования. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86516410",
+            "premium": false,
+            "name": "Инженер по АСУТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "Дагестанская улица",
+                "building": "14/1",
+                "lat": 54.714068,
+                "lng": 55.83785,
+                "description": null,
+                "raw": "Уфа, Дагестанская улица, 14/1",
+                "metro": null,
+                "metro_stations": [],
+                "id": "1365337"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-04T13:52:08+0300",
+            "created_at": "2023-10-04T13:52:08+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86516410",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86516410?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86516410",
+            "relations": [],
+            "employer": {
+                "id": "956831",
+                "name": "ИНТАС-Компани",
+                "url": "https://api.hh.ru/employers/956831",
+                "alternate_url": "https://hh.ru/employer/956831",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/639314.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/639315.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/105522.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=956831",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Образование высшее техническое. Опыт работы от 3 лет. Знание архитектуры построения автоматизированных систем. Знание языков программирования автоматизированных систем. ",
+                "responsibility": "Наладка оборудования КИПиА на нефтедобывающем оборудовании. Наладка АСУ ТП. Осуществление технического обслуживания электрического оборудования, его профилактический осмотр и ремонт. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "flyInFlyOut",
+                "name": "Вахтовый метод"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86867616",
+            "premium": false,
+            "name": "Инженер в отдел проектирования систем обогрева",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 60000,
+                "to": 80000,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Блюхера",
+                "building": "1/2",
+                "lat": 54.778253,
+                "lng": 56.021169,
+                "description": null,
+                "raw": "Уфа, улица Блюхера, 1/2",
+                "metro": null,
+                "metro_stations": [],
+                "id": "853382"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-13T15:26:03+0300",
+            "created_at": "2023-10-13T15:26:03+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86867616",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86867616?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86867616",
+            "relations": [],
+            "employer": {
+                "id": "1128006",
+                "name": "Компания КРУС-Запад",
+                "url": "https://api.hh.ru/employers/1128006",
+                "alternate_url": "https://hh.ru/employer/1128006",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/242390.jpg",
+                    "90": "https://hhcdn.ru/employer-logo/1412237.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1412238.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1128006",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Профильное высшее образование. — Знание нормативной документации и ГОСТов. — Знание программного пакета MS Office, AutoCad. — Опыт работы в проектировании электроснабжения или...",
+                "responsibility": "Разработка проектной и рабочей документации автоматизированных систем промышленного электрообогрева. — Разработка разделов ЭМ, ЭС проекта (проектная, рабочая документация). — Разработка технических заданий. — "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "remote",
+                "name": "Удаленная работа"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": true,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87636051",
+            "premium": false,
+            "name": "Ведущий инженер-конструктор (режущий инструмент)",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-03T07:55:45+0300",
+            "created_at": "2023-10-03T07:55:45+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87636051",
+            "branding": {
+                "type": "MAKEUP",
+                "tariff": null
+            },
+            "show_logo_in_search": true,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87636051?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87636051",
+            "relations": [],
+            "employer": {
+                "id": "981",
+                "name": "Калашников",
+                "url": "https://api.hh.ru/employers/981",
+                "alternate_url": "https://hh.ru/employer/981",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/242385.jpg",
+                    "90": "https://hhcdn.ru/employer-logo/1412217.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1412218.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=981",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Не боитесь сложных задач.",
+                "responsibility": "Отсрочку от срочной службы и бронь от частичной мобилизации. Проектировали режущий инструмент. Составляли ТЗ на изготовление средств технологического оснащения. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87281710",
+            "premium": false,
+            "name": "Инженер-конструктор (проектирование шкафного оборудования АСУ ТП)",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 60000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица 50 лет СССР",
+                "building": "42/3",
+                "lat": 54.747699,
+                "lng": 56.021888,
+                "description": null,
+                "raw": "Уфа, улица 50 лет СССР, 42/3",
+                "metro": null,
+                "metro_stations": [],
+                "id": "84848"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-09T10:34:22+0300",
+            "created_at": "2023-10-09T10:34:22+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87281710",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87281710?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87281710",
+            "relations": [],
+            "employer": {
+                "id": "810278",
+                "name": "НПП Авиатрон",
+                "url": "https://api.hh.ru/employers/810278",
+                "alternate_url": "https://hh.ru/employer/810278",
+                "logo_urls": {
+                    "240": "https://hhcdn.ru/employer-logo/4076100.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/4076099.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/908853.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=810278",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Образование высшее техническое. Знание ГОСТов, ЕСКД. Опыт работы с нормативно-технической документацией. Хорошее владение САПР (AutoCAD, E-plan), основных офисных...",
+                "responsibility": "Разработка конструкторской документации на изделия системы автоматизации объектов добычи и транспортировки нефти (Транснефть, Газпром, Лукойл, Роснефть) в соответствии с нормативной..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86313551",
+            "premium": false,
+            "name": "Инженер-конструктор 3 категории",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": null,
+                "to": 51000,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "село Зубово",
+                "street": "Электрозаводская улица",
+                "building": "10Б",
+                "lat": 54.600473,
+                "lng": 55.901774,
+                "description": null,
+                "raw": "село Зубово, Электрозаводская улица, 10Б",
+                "metro": null,
+                "metro_stations": [],
+                "id": "13873957"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-09-21T11:21:28+0300",
+            "created_at": "2023-09-21T11:21:28+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86313551",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86313551?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86313551",
+            "relations": [],
+            "employer": {
+                "id": "1440117",
+                "name": "ГК БИТ",
+                "url": "https://api.hh.ru/employers/1440117",
+                "alternate_url": "https://hh.ru/employer/1440117",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/581171.PNG",
+                    "240": "https://hhcdn.ru/employer-logo/2765940.png",
+                    "90": "https://hhcdn.ru/employer-logo/2765939.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1440117",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Умение работать в Компас 3Д, SolidWorks. Знание ЕКСД. Знание 1С.",
+                "responsibility": "Разрабатывать конструкторскую документацию для производства. Участвовать в монтаже, наладке, испытаниях и сдаче в эксплуатацию опытных образцов изделий, узлов, систем и..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "noExperience",
+                "name": "Нет опыта"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "82443429",
+            "premium": false,
+            "name": "Ведущий инженер-проектировщик (ПИР)",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 90000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "Комсомольская улица",
+                "building": "98",
+                "lat": 54.749725,
+                "lng": 56.004595,
+                "description": null,
+                "raw": "Уфа, Комсомольская улица, 98",
+                "metro": null,
+                "metro_stations": [],
+                "id": "140961"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-09T07:49:56+0300",
+            "created_at": "2023-10-09T07:49:56+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=82443429",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/82443429?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/82443429",
+            "relations": [],
+            "employer": {
+                "id": "614764",
+                "name": "Экситон - автоматика, НПФ",
+                "url": "https://api.hh.ru/employers/614764",
+                "alternate_url": "https://hh.ru/employer/614764",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/935399.jpg",
+                    "240": "https://hhcdn.ru/employer-logo/4182145.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/4182144.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=614764",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Знание нормативной документации в области проектирования. Знание программного пакета MS Office, AutoCad. Опыт работы в проектировании объектов...",
+                "responsibility": "Разработка технических решений в части АСУТП, АСПСиПТ, СЛТМ на строящиеся и модернизируемые объекты нефтегазовой промышленности и энергетики, взаимодействие с Заказчиком. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "85588371",
+            "premium": false,
+            "name": "Инженер-конструктор по проектированию пресс-форм",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-19T09:51:12+0300",
+            "created_at": "2023-10-19T09:51:12+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=85588371",
+            "branding": {
+                "type": "MAKEUP",
+                "tariff": null
+            },
+            "show_logo_in_search": true,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/85588371?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/85588371",
+            "relations": [],
+            "employer": {
+                "id": "981",
+                "name": "Калашников",
+                "url": "https://api.hh.ru/employers/981",
+                "alternate_url": "https://hh.ru/employer/981",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/242385.jpg",
+                    "90": "https://hhcdn.ru/employer-logo/1412217.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1412218.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=981",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее образование (машиностроение). Опыт работы в проектировании пресс-форм для полимерных изделий от 2-х лет. Опыт работы в CAD...",
+                "responsibility": "Проектирование пресс-форм для полимерных изделий (термопласты, реактопласты, резинотехнические смеси). Разработка полного пакета КД по ЕСКД. Анализ состояния и дефектов..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "84415694",
+            "premium": false,
+            "name": "Инженер-электроник",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-20T06:15:00+0300",
+            "created_at": "2023-10-20T06:15:00+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=84415694",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/84415694?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/84415694",
+            "relations": [],
+            "employer": {
+                "id": "197135",
+                "name": "ИК СИБИНТЕК",
+                "url": "https://api.hh.ru/employers/197135",
+                "alternate_url": "https://hh.ru/employer/197135",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1888930.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/361668.png",
+                    "240": "https://hhcdn.ru/employer-logo/1888931.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=197135",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее профессиональное (техническое) образование. Опыт работы от 1-го года в области эксплуатации средств автоматизации. Знание правил устройства электроустановок (ПУЭ...",
+                "responsibility": "Производить ремонт, наладку элементов и блоков электронно-вычислительных машин, радиоэлектронной аппаратуры, средств автоматизации, средств измерения и контроля. Принимать меры по..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "flyInFlyOut",
+                "name": "Вахтовый метод"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87657953",
+            "premium": false,
+            "name": "Инженер-проектировщик комплексных систем безопасности",
+            "department": {
+                "id": "197135-197135-iksb",
+                "name": "ИК \"Сибинтек\""
+            },
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Ленина",
+                "building": "149",
+                "lat": 54.749917,
+                "lng": 55.960892,
+                "description": null,
+                "raw": "Уфа, улица Ленина, 149",
+                "metro": null,
+                "metro_stations": [],
+                "id": "755382"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-03T12:17:40+0300",
+            "created_at": "2023-10-03T12:17:40+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87657953",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87657953?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87657953",
+            "relations": [],
+            "employer": {
+                "id": "197135",
+                "name": "ИК СИБИНТЕК",
+                "url": "https://api.hh.ru/employers/197135",
+                "alternate_url": "https://hh.ru/employer/197135",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1888930.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/361668.png",
+                    "240": "https://hhcdn.ru/employer-logo/1888931.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=197135",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее профессиональное образование (техническое). Опыт работы на аналогичных должностях от 1 года. Знание нормативно-технических документов по проектированию. ",
+                "responsibility": "Сбор исходных данных, предпроектное обследование объектов и (или) систем, подготовка отчетов по результатам предпроектного обследования. Организация разработки проектно-сметной документации..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86058446",
+            "premium": false,
+            "name": "Инженер-проектировщик ПГС",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": null,
+                "street": null,
+                "building": null,
+                "lat": null,
+                "lng": null,
+                "description": null,
+                "raw": "Уфа, ул. Пушкина 33/2, 2 этаж",
+                "metro": null,
+                "metro_stations": [],
+                "id": "152526"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-14T13:21:56+0300",
+            "created_at": "2023-10-14T13:21:56+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86058446",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86058446?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86058446",
+            "relations": [],
+            "employer": {
+                "id": "998174",
+                "name": "Форт Диалог",
+                "url": "https://api.hh.ru/employers/998174",
+                "alternate_url": "https://hh.ru/employer/998174",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/795730.png",
+                    "90": "https://hhcdn.ru/employer-logo/3623807.png",
+                    "240": "https://hhcdn.ru/employer-logo/3623808.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=998174",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее образование по профилю Промышленное и гражданское строительство (ПГС). Курсы расчётных программ – Scad Office, Лира. Знание программ Scad, lira, autocad...",
+                "responsibility": "Предпроектное обследование. Разработка разделов: -АС Архитектурно-строительные решения. -КМ Конструкции металлические. -КЖ Конструкции железобетонные. -КР Конструктивные решения. -ГП Генеральный план. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86238360",
+            "premium": false,
+            "name": "Ведущий инженер-электроник",
+            "department": {
+                "id": "197135-197135-iksb",
+                "name": "ИК \"Сибинтек\""
+            },
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-20T06:13:47+0300",
+            "created_at": "2023-10-20T06:13:47+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86238360",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86238360?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86238360",
+            "relations": [],
+            "employer": {
+                "id": "197135",
+                "name": "ИК СИБИНТЕК",
+                "url": "https://api.hh.ru/employers/197135",
+                "alternate_url": "https://hh.ru/employer/197135",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1888930.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/361668.png",
+                    "240": "https://hhcdn.ru/employer-logo/1888931.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=197135",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Среднее профессиональное или высшее профессиональное образование в области автоматизации, телекоммуникационных, информационных технологий. Опыт работы от 3-х лет в области...",
+                "responsibility": "Инсталляция и первичная настройка. Подключение компьютера к электросети и ЛВС. Замена оборудования при выходе из строя. Диагностика и выявление первоначальной..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87788183",
+            "premium": false,
+            "name": "Ведущий Инженер-программист АСУ ТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 100000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": null,
+                "street": null,
+                "building": null,
+                "lat": null,
+                "lng": null,
+                "description": null,
+                "raw": "Уфа, ул. Пушкина 33/2, 2 этаж",
+                "metro": null,
+                "metro_stations": [],
+                "id": "152526"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-05T14:57:08+0300",
+            "created_at": "2023-10-05T14:57:08+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87788183",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87788183?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87788183",
+            "relations": [],
+            "employer": {
+                "id": "998174",
+                "name": "Форт Диалог",
+                "url": "https://api.hh.ru/employers/998174",
+                "alternate_url": "https://hh.ru/employer/998174",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/795730.png",
+                    "90": "https://hhcdn.ru/employer-logo/3623807.png",
+                    "240": "https://hhcdn.ru/employer-logo/3623808.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=998174",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Знание основ построения, архитектуры систем АСУ ТП. Знание и практический опыт работы с ПЛК. Знание и опыт работы с языками...",
+                "responsibility": "Разрабатывать ПО среднего и верхнего уровней АСУ ТП. Разрабатывать эксплуатационную документацию на ПО. Участвовать в заводских приемо-сдаточных испытаниях АСУТП. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87658220",
+            "premium": false,
+            "name": "Инженер-проектировщик беспроводных систем связи",
+            "department": {
+                "id": "197135-197135-iksb",
+                "name": "ИК \"Сибинтек\""
+            },
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Ленина",
+                "building": "149",
+                "lat": 54.749917,
+                "lng": 55.960892,
+                "description": null,
+                "raw": "Уфа, улица Ленина, 149",
+                "metro": null,
+                "metro_stations": [],
+                "id": "755382"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-03T12:20:57+0300",
+            "created_at": "2023-10-03T12:20:57+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87658220",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87658220?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87658220",
+            "relations": [],
+            "employer": {
+                "id": "197135",
+                "name": "ИК СИБИНТЕК",
+                "url": "https://api.hh.ru/employers/197135",
+                "alternate_url": "https://hh.ru/employer/197135",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1888930.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/361668.png",
+                    "240": "https://hhcdn.ru/employer-logo/1888931.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=197135",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее профессиональное образование (техническое). Опыт работы на аналогичных должностях от 1 года. Знание нормативно-технических документов по проектированию. ",
+                "responsibility": "Сбор исходных данных, предпроектное обследование объектов и (или) систем, подготовка отчетов по результатам предпроектного обследования. Организация разработки проектно-сметной документации..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "85759152",
+            "premium": false,
+            "name": "Инженер ПТО",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 27000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "Комсомольская",
+                "building": "122Б",
+                "lat": 54.755591,
+                "lng": 56.010183,
+                "description": null,
+                "raw": "Уфа, Комсомольская, 122Б",
+                "metro": null,
+                "metro_stations": [],
+                "id": "81449"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-19T09:00:22+0300",
+            "created_at": "2023-10-19T09:00:22+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=85759152",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/85759152?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/85759152",
+            "relations": [],
+            "employer": {
+                "id": "73358",
+                "name": "Кристалл, МТУ",
+                "url": "https://api.hh.ru/employers/73358",
+                "alternate_url": "https://hh.ru/employer/73358",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/792842.png",
+                    "90": "https://hhcdn.ru/employer-logo/3612255.png",
+                    "240": "https://hhcdn.ru/employer-logo/3612256.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=73358",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее образование. Ответственность. Инициативность. Целеустремленность. Коммуникабельность. Знание смет (желательно).",
+                "responsibility": "Обеспечение, контроль и оперативное регулирование договорных обязательств, преддоговорная работа, переписка с генподрядчиками. Подготовка тендеров."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87658482",
+            "premium": false,
+            "name": "Инженер-проектировщик сетей связи",
+            "department": {
+                "id": "197135-197135-iksb",
+                "name": "ИК \"Сибинтек\""
+            },
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Ленина",
+                "building": "149",
+                "lat": 54.749917,
+                "lng": 55.960892,
+                "description": null,
+                "raw": "Уфа, улица Ленина, 149",
+                "metro": null,
+                "metro_stations": [],
+                "id": "755382"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-03T12:24:02+0300",
+            "created_at": "2023-10-03T12:24:02+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87658482",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87658482?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87658482",
+            "relations": [],
+            "employer": {
+                "id": "197135",
+                "name": "ИК СИБИНТЕК",
+                "url": "https://api.hh.ru/employers/197135",
+                "alternate_url": "https://hh.ru/employer/197135",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1888930.png",
+                    "original": "https://hhcdn.ru/employer-logo-original/361668.png",
+                    "240": "https://hhcdn.ru/employer-logo/1888931.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=197135",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее профессиональное образование (техническое). Опыт работы на аналогичных должностях от 1 года. Знание нормативно-технических документов по проектированию. ",
+                "responsibility": "Сбор исходных данных, предпроектное обследование объектов и (или) систем, подготовка отчетов по результатам предпроектного обследования. Организация разработки проектно-сметной документации..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86454842",
+            "premium": false,
+            "name": "Инженер-конструктор 2 категории",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": null,
+                "to": 63000,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "село Зубово",
+                "street": "Электрозаводская улица",
+                "building": "10Б",
+                "lat": 54.600473,
+                "lng": 55.901774,
+                "description": null,
+                "raw": "село Зубово, Электрозаводская улица, 10Б",
+                "metro": null,
+                "metro_stations": [],
+                "id": "13873957"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-09-21T11:21:18+0300",
+            "created_at": "2023-09-21T11:21:18+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86454842",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86454842?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86454842",
+            "relations": [],
+            "employer": {
+                "id": "1440117",
+                "name": "ГК БИТ",
+                "url": "https://api.hh.ru/employers/1440117",
+                "alternate_url": "https://hh.ru/employer/1440117",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/581171.PNG",
+                    "240": "https://hhcdn.ru/employer-logo/2765940.png",
+                    "90": "https://hhcdn.ru/employer-logo/2765939.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1440117",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Умение работать в Компас 3Д, SolidWorks. Знание ЕКСД. Знание 1С. Опыт работы от 1 до 3 лет.",
+                "responsibility": "Разрабатывать конструкторскую документацию для производства. Участвовать в монтаже, наладке, испытаниях и сдаче в эксплуатацию опытных образцов изделий, узлов, систем и..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "70682663",
+            "premium": false,
+            "name": "Инженер по наладке и испытаниям АСУ ТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Чайковского",
+                "building": "9",
+                "lat": 54.78941,
+                "lng": 56.052853,
+                "description": null,
+                "raw": "Уфа, улица Чайковского, 9",
+                "metro": null,
+                "metro_stations": [],
+                "id": "506661"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-19T15:03:34+0300",
+            "created_at": "2023-10-19T15:03:34+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=70682663",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/70682663?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/70682663",
+            "relations": [],
+            "employer": {
+                "id": "1851905",
+                "name": "НГП ИНФОРМ",
+                "url": "https://api.hh.ru/employers/1851905",
+                "alternate_url": "https://hh.ru/employer/1851905",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/1063803.png",
+                    "90": "https://hhcdn.ru/employer-logo/5875845.png",
+                    "240": "https://hhcdn.ru/employer-logo/5875846.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1851905",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "понимание структуры построения автоматизированных систем. - понимание принципов работы приборов КИПиА (расходомеры, уровнемеры, датчики температуры, давления, и т.п). - ",
+                "responsibility": "Обслуживание систем АСУТП на базе контроллеров Schneider, Siemens, Allen Bradley, оборудования КИП и А. - Проведение шеф-монтажные и пусконаладочных работ..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "85118509",
+            "premium": false,
+            "name": "Инженер-конструктор по разработке печатных плат",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 30000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Чернышевского",
+                "building": "82",
+                "lat": 54.729335,
+                "lng": 55.941318,
+                "description": null,
+                "raw": "Уфа, улица Чернышевского, 82",
+                "metro": null,
+                "metro_stations": [],
+                "id": "3856908"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-13T10:01:48+0300",
+            "created_at": "2023-10-13T10:01:48+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=85118509",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/85118509?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/85118509",
+            "relations": [],
+            "employer": {
+                "id": "45643",
+                "name": "НПП Полигон",
+                "url": "https://api.hh.ru/employers/45643",
+                "alternate_url": "https://hh.ru/employer/45643",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1555765.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1555766.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/278317.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=45643",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Опыт работы в одной из САПР: Cadence Allegro PCB, Cadence OrCAD Capture, PCad, Altium Designer является преимуществом!. - Опыт работы по...",
+                "responsibility": "Разработка топологии цифровых и аналоговых многослойных печатных плат (до 6 класса точности). -Пополнение и сопровождение библиотеки элементов. - Создание комплекта документации..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "87708697",
+            "premium": false,
+            "name": "Инженер-проектировщик шкафного оборудования АСУ ТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 60000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица 50 лет СССР",
+                "building": "42/3",
+                "lat": 54.747699,
+                "lng": 56.021888,
+                "description": null,
+                "raw": "Уфа, улица 50 лет СССР, 42/3",
+                "metro": null,
+                "metro_stations": [],
+                "id": "84848"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-04T10:32:18+0300",
+            "created_at": "2023-10-04T10:32:18+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=87708697",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/87708697?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/87708697",
+            "relations": [],
+            "employer": {
+                "id": "810278",
+                "name": "НПП Авиатрон",
+                "url": "https://api.hh.ru/employers/810278",
+                "alternate_url": "https://hh.ru/employer/810278",
+                "logo_urls": {
+                    "240": "https://hhcdn.ru/employer-logo/4076100.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/4076099.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/908853.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=810278",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Образование высшее техническое. Знание ГОСТов, ЕСКД. Опыт работы с нормативно-технической документацией. Хорошее владение САПР (AutoCAD, E-plan), основных офисных...",
+                "responsibility": "Разработка конструкторской документации на изделия системы автоматизации объектов добычи и транспортировки нефти (Транснефть, Газпром, Лукойл, Роснефть) в соответствии с нормативной..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86092892",
+            "premium": false,
+            "name": "Инженер ПТО",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": null,
+                "street": null,
+                "building": null,
+                "lat": null,
+                "lng": null,
+                "description": null,
+                "raw": "Уфа, ул. Пушкина 33/2, 2 этаж",
+                "metro": null,
+                "metro_stations": [],
+                "id": "152526"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-14T13:22:03+0300",
+            "created_at": "2023-10-14T13:22:03+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86092892",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86092892?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86092892",
+            "relations": [],
+            "employer": {
+                "id": "998174",
+                "name": "Форт Диалог",
+                "url": "https://api.hh.ru/employers/998174",
+                "alternate_url": "https://hh.ru/employer/998174",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/795730.png",
+                    "90": "https://hhcdn.ru/employer-logo/3623807.png",
+                    "240": "https://hhcdn.ru/employer-logo/3623808.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=998174",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Техническое образование (связь, энергетика). Предпочтительны знания в области систем технической безопасности, связи. Стаж работы от 2-х лет.",
+                "responsibility": "Проверка соответствия ПД/РД. Обследование дорожных зон покрытия, проверка выполненных объемов. Работа с подрядчиками (проверка исполнительной документации). Комплектование исполнительной документации. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "flyInFlyOut",
+                "name": "Вахтовый метод"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "76582453",
+            "premium": false,
+            "name": "Инженер по разработке технической документации отдела ЛНК",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Адмирала Макарова",
+                "building": "14/5",
+                "lat": 54.79254,
+                "lng": 56.053805,
+                "description": null,
+                "raw": "Уфа, улица Адмирала Макарова, 14/5",
+                "metro": null,
+                "metro_stations": [],
+                "id": "12667198"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-16T14:11:58+0300",
+            "created_at": "2023-10-16T14:11:58+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=76582453",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/76582453?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/76582453",
+            "relations": [],
+            "employer": {
+                "id": "630322",
+                "name": "Русская лаборатория",
+                "url": "https://api.hh.ru/employers/630322",
+                "alternate_url": "https://hh.ru/employer/630322",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/676748.png",
+                    "240": "https://hhcdn.ru/employer-logo/3148125.png",
+                    "90": "https://hhcdn.ru/employer-logo/3148124.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=630322",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Понимание основ работы с нормативной документацией. Умение работать с технической документацией. Навыки работы с ПК (MS Office: Word, Excel, Visio).",
+                "responsibility": "Изучение и анализ технической документации заказчика. Оформление протоколов и схем."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "85118400",
+            "premium": false,
+            "name": "Ведущий инженер-схемотехник",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": {
+                "from": 120000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Чернышевского",
+                "building": "82",
+                "lat": 54.729335,
+                "lng": 55.941318,
+                "description": null,
+                "raw": "Уфа, улица Чернышевского, 82",
+                "metro": null,
+                "metro_stations": [],
+                "id": "3856908"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-13T10:01:58+0300",
+            "created_at": "2023-10-13T10:01:58+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=85118400",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/85118400?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/85118400",
+            "relations": [],
+            "employer": {
+                "id": "45643",
+                "name": "НПП Полигон",
+                "url": "https://api.hh.ru/employers/45643",
+                "alternate_url": "https://hh.ru/employer/45643",
+                "logo_urls": {
+                    "90": "https://hhcdn.ru/employer-logo/1555765.jpeg",
+                    "240": "https://hhcdn.ru/employer-logo/1555766.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/278317.jpg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=45643",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Опыт работы в одной из ECAD: Altium Designer, Cadence, Mentor Graphics (готовность переучиваться на другой САПР). - Опыт разработки принципиальных схем...",
+                "responsibility": "Разработка электрических схем (функциональных, структурных, принципиальных) на отечественной и иностранной компонентной базе. - Разработка технической документации (подготовка исходной информации для. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "80718962",
+            "premium": false,
+            "name": "Инженер-проектировщик АСУ ТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Рихарда Зорге",
+                "building": "33/1",
+                "lat": 54.757566,
+                "lng": 55.992126,
+                "description": null,
+                "raw": "Уфа, улица Рихарда Зорге, 33/1",
+                "metro": null,
+                "metro_stations": [],
+                "id": "2953144"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-17T13:02:44+0300",
+            "created_at": "2023-10-17T13:02:44+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80718962",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/80718962?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/80718962",
+            "relations": [],
+            "employer": {
+                "id": "1440117",
+                "name": "ГК БИТ",
+                "url": "https://api.hh.ru/employers/1440117",
+                "alternate_url": "https://hh.ru/employer/1440117",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/581171.PNG",
+                    "240": "https://hhcdn.ru/employer-logo/2765940.png",
+                    "90": "https://hhcdn.ru/employer-logo/2765939.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1440117",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Уверенное пользование ПК, свободное владение программными продуктами AutoCAD,eplan electric , MS Office. Знание ГОСТов, СНиПов, ПУЭ и...",
+                "responsibility": "Разработка технической документации согласно ГОСТ 34.201: схем электрических принципиальных, перечней элементов, схем подключений, чертежей внешнего вида, спецификаций оборудования, структурных..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "86220877",
+            "premium": false,
+            "name": "Ведущий инженер-проектировщик автоматизированных систем",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": null,
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-18T08:31:07+0300",
+            "created_at": "2023-10-18T08:31:07+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=86220877",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/86220877?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/86220877",
+            "relations": [],
+            "employer": {
+                "id": "1551422",
+                "name": "КонсОМ СКС",
+                "url": "https://api.hh.ru/employers/1551422",
+                "alternate_url": "https://hh.ru/employer/1551422",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/890500.png",
+                    "90": "https://hhcdn.ru/employer-logo/4002687.png",
+                    "240": "https://hhcdn.ru/employer-logo/4002688.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1551422",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее образование (Автоматизация технологических процессов и производств, Управление в технических системах, Мехатроника, Робототехника). Обязательно: Опыт работы в инжиниринговой (проектной) организации. ",
+                "responsibility": "Участие в разработке автоматизированных систем на основе технического задания и функциональных спецификаций. Разработка технических решений, подбор технических средств автоматизации. "
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between3And6",
+                "name": "От 3 до 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "80716929",
+            "premium": false,
+            "name": "Главный инженер-проектировщик АСУ ТП",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Джалиля Киекбаева",
+                "building": "2",
+                "lat": 54.735776,
+                "lng": 55.987563,
+                "description": null,
+                "raw": "Уфа, улица Джалиля Киекбаева, 2",
+                "metro": null,
+                "metro_stations": [],
+                "id": "653566"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-17T13:02:39+0300",
+            "created_at": "2023-10-17T13:02:39+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80716929",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/80716929?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/80716929",
+            "relations": [],
+            "employer": {
+                "id": "1440117",
+                "name": "ГК БИТ",
+                "url": "https://api.hh.ru/employers/1440117",
+                "alternate_url": "https://hh.ru/employer/1440117",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/581171.PNG",
+                    "240": "https://hhcdn.ru/employer-logo/2765940.png",
+                    "90": "https://hhcdn.ru/employer-logo/2765939.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1440117",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Уверенное пользование ПК, свободное владение программными продуктами AutoCAD,eplan electric , MS Office. Знание ГОСТов, СНиПов, ПУЭ и...",
+                "responsibility": "Разработка технической документации согласно ГОСТ 34.201: схем электрических принципиальных, перечней элементов, схем подключений, чертежей внешнего вида, спецификаций оборудования, структурных..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "moreThan6",
+                "name": "Более 6 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        },
+        {
+            "id": "80719474",
+            "premium": false,
+            "name": "Инженер-проектировщик АСУ ТП 2 категории",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "99",
+                "name": "Уфа",
+                "url": "https://api.hh.ru/areas/99"
+            },
+            "salary": null,
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Уфа",
+                "street": "улица Джалиля Киекбаева",
+                "building": "2",
+                "lat": 54.735776,
+                "lng": 55.987563,
+                "description": null,
+                "raw": "Уфа, улица Джалиля Киекбаева, 2",
+                "metro": null,
+                "metro_stations": [],
+                "id": "653566"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2023-10-17T13:02:48+0300",
+            "created_at": "2023-10-17T13:02:48+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80719474",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/80719474?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/80719474",
+            "relations": [],
+            "employer": {
+                "id": "1440117",
+                "name": "ГК БИТ",
+                "url": "https://api.hh.ru/employers/1440117",
+                "alternate_url": "https://hh.ru/employer/1440117",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/581171.PNG",
+                    "240": "https://hhcdn.ru/employer-logo/2765940.png",
+                    "90": "https://hhcdn.ru/employer-logo/2765939.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=1440117",
+                "accredited_it_employer": true,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Высшее техническое образование. Уверенное пользование ПК, свободное владение программными продуктами AutoCAD,eplan electric , MS Office. Знание ГОСТов, СНиПов, ПУЭ и...",
+                "responsibility": "Разработка технической документации согласно ГОСТ 34.201: схем электрических принципиальных, перечней элементов, схем подключений, чертежей внешнего вида, спецификаций оборудования, структурных..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "48",
+                    "name": "Инженер-конструктор, инженер-проектировщик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false
+        }
+    ],
+    "found": 39,
+    "pages": 1,
+    "per_page": 100,
+    "page": 0,
+    "clusters": null,
+    "arguments": null,
+    "fixes": null,
+    "suggests": null,
+    "alternate_url": "https://hh.ru/search/vacancy?area=99&enable_snippets=true&industry=7&items_on_page=100&professional_role=48&text=%D0%B8%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80"
+}
