@@ -18,6 +18,7 @@ from datetime import datetime
 
 from aiogram.utils import keyboard
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
+from nova_ai.nova_bot import Nova_bot
 
 user_scores = {}
 current_question = 1
@@ -26,15 +27,16 @@ router = Router()
 web_app = WebAppInfo(url='https://timzmei.github.io/pto_bot')
 
 
+
 # @router.message(Command('test'))
 # async def start_test(message: types.Message):
 #     await message.answer("Давай начнем тестирование. Выбери один из вариантов ответа для каждой группы утверждений:")
     # Здесь добавьте логику отправки вопросов и обработки ответов пользователя
 
 
-@router.message(F.text.contains('Тимур'))
-async def echo_timur(message: types.Message):
-    await message.answer('Тиму-у-ур!!! Хозяин, тут тебя вспомнили!!!')
+# @router.message(F.text.contains('Тимур'))
+# async def echo_timur(message: types.Message):
+#     await message.answer('Тиму-у-ур!!! Хозяин, тут тебя вспомнили!!!')
 
 @router.message(F.web_app_data)
 async def buy_process(web_app_message):

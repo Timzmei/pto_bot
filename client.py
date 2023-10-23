@@ -2,15 +2,21 @@ from webbrowser import get
 import config
 from aiogram.types import FSInputFile, URLInputFile, BufferedInputFile
 
-from aiogram import types, F, Router
-from aiogram.types import Message
+from aiogram import types, F, Router, Bot
+from aiogram.types import Message, Chat
 from aiogram.filters import Command
 from aiogram import Dispatcher
 from datetime import datetime
+from unidecode import unidecode
+from collections import deque
+
 import locale
+import os
 
 
-from create_bot import dp
+
+
+# from create_bot import dp
 from hh_rtrs import get_rtrn_vocancies
 
 
@@ -18,13 +24,25 @@ from hh_rtrs import get_rtrn_vocancies
 import requests
 import datetime
 
-open_weather_token = config.open_weather_token
+
+from dotenv import load_dotenv
+from nova_ai.nova_bot import Nova_bot
+# from chat import Chat  # Подключение Chat класса из файла chat.py
+
+# Загрузить переменные окружения из .env файла
+load_dotenv()
+
+# Получить значение переменных окружения
+open_weather_token = os.environ.get("OPEN_WEATHER_TOKEN")
+
 lat = config.lat
 lon = config.lon
-
+novaai_instance = Nova_bot()
 
 router = Router()
-
+# Создание экземпляра Chat
+# chat_instance = Chat()
+my_queue = deque(maxlen=5)
 
 
 
@@ -49,22 +67,68 @@ async def get_hh_rtrs(message: types.Message):
     await message.reply_document(FSInputFile('filtered_vacancies.xlsx'), caption=f"[{user_name}](tg://user?id={user_id}), держи табличку инженерных вакансий с HH.ru по Уфе", parse_mode="Markdown")
 
     
-@router.message(lambda message: 'с днем рождения' in message.text.lower())
-async def echo_happy_birthday(message: types.Message):
-    await message.answer('🥳🥳🥳🥳🥳🥳🥳')
+@router.message(F.text)
+async def echo_happy_birthday(message: Message):
+    message_id = message.message_id
+    from_user_name = transliterate_text(message.from_user.first_name)
+    message_text = message.text
 
-@router.message()
-async def echo_send(message: types.Message):
-    if ('привет' in message.text.lower()):
-        await message.answer('И тебе привет!')  
-    elif ('погода' in message.text.lower() and 'какая' in message.text.lower()):
-        text = get_weater()
-        await message.reply(text, parse_mode="HTML")
+    # all_messages = await chat_instance.get_messages()
+    # all_users = await chat_instance.get_users()
+    # messages = await novaai_instance.get_messages(all_messages, all_users)
+    my_queue.append({'role': 'user', 'name': from_user_name, 'content': message_text})
+
+    # text = await novaai_instance.create_chat_completion(messages)
     
-@router.message(Command("О_боте"))
-async def about(message: types.Message):
-    # await message.reply('Привет!')
-    await message.answer('Я - телеграм бот, созданный для помощи птошникам в различных задачах. Славлюсь умопомрачительной ртрс-ной сообразительностью)))')
+    # system_info = 'You are a useful, but not particularly talkative chat assistant who loves sarcasm, black humor and girls. When it is necessary to show empathy and care. Chat participants: Timur and Gulnaz and a useful assistant. Gulnaz likes to communicate in Spanish'
+    # print(f'from_user={from_user_name}, message_text={message_text}')
+    # messages = []
+    # messages.append({'role': 'system', 'content': system_info})
+    # messages.append({'role': 'user', 'content': message_text})
+    messages = get_messages(list(my_queue))    
+    print(f'перед передачей в AI = {messages}')
+    text = await novaai_instance.create_chat_completion(messages)
+    my_queue.append({'role': 'assistant', 'name': 'rtrs_pto_bot', 'content': text})
+    # print(text)
+    await message.answer(text)
+
+def get_messages(my_queue):
+    system_info = 'You are a useful, but not particularly talkative chat assistant who loves sarcasm, black humor and girls. When it is necessary to show empathy and care. Chat participants: Timur and Gulnaz and a useful assistant. Gulnaz likes to communicate in Spanish'
+
+    messages = []
+    messages.append({'role': 'system', 'content': system_info})
+    print(f'add system info = {messages}')
+    for message in my_queue:
+      messages.append(message)
+    print(f'add messages = {messages}')
+    return messages
+
+def transliterate_text(text):
+    transliterated_text = ""
+    
+    for char in text:
+        if char.isalpha() and char.isascii():
+            # Символ является буквой латинского алфавита или другим символом ASCII
+            transliterated_text += char
+        else:
+            # Символ не является буквой латинского алфавита
+            transliterated_text += unidecode(char)
+    
+    return transliterated_text
+
+
+# @router.message()
+# async def echo_send(message: types.Message):
+#     if ('привет' in message.text.lower()):
+#         await message.answer('И тебе привет!')  
+#     elif ('погода' in message.text.lower() and 'какая' in message.text.lower()):
+#         text = get_weater()
+#         await message.reply(text, parse_mode="HTML")
+    
+# @router.message(Command("О_боте"))
+# async def about(message: types.Message):
+#     # await message.reply('Привет!')
+#     await message.answer('Я - телеграм бот, созданный для помощи птошникам в различных задачах. Славлюсь умопомрачительной ртрс-ной сообразительностью)))')
 
 
     

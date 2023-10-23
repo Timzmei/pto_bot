@@ -1,16 +1,24 @@
 import asyncio
 import logging
+import os
 
 from aiogram import Bot, Dispatcher
 from aiogram.enums.parse_mode import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 
 import client
-import config
 import get_test
 
+from dotenv import load_dotenv
 
-bot = Bot(token=config.TOKEN, parse_mode=ParseMode.HTML)
+# Загрузить переменные окружения из .env файла
+load_dotenv()
+
+# Получить значение переменных окружения
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+
+
+bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher(storage=MemoryStorage())
 
 # client.register_handlers_client(dp)
