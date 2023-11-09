@@ -1,6 +1,10 @@
 import openai as novaai
 import os
 from dotenv import load_dotenv
+import g4f, asyncio
+
+g4f.debug.logging = True # enable logging
+g4f.check_version = False # Disable automatic version checking
 
 
 class Nova_bot:
@@ -15,19 +19,38 @@ class Nova_bot:
   novaai.api_key = NOVA_AI_TOKEN
 
 
+  semaphore = asyncio.Semaphore(1)
 
-
+  # @classmethod
+  # async def create_chat_completion(cls, messages):
+  #     # Создание объекта ChatCompletion с использованием данных из chat_instance
+  #     # messages = await cls.get_messages()
+  #     completion = novaai.ChatCompletion.create(
+  #         model="gpt-3.5-turbo",
+  #         messages=messages
+  #     )
+  #     print(f'messages={messages}\n')
+  #     print(f'completion={completion}\n')
+  #     return completion.choices[0].message.content
   @classmethod
   async def create_chat_completion(cls, messages):
-      # Создание объекта ChatCompletion с использованием данных из chat_instance
-      # messages = await cls.get_messages()
-      completion = novaai.ChatCompletion.create(
-          model="gpt-3.5-turbo",
-          messages=messages
-      )
-      print(f'messages={messages}\n')
-      print(f'completion={completion}\n')
-      return completion.choices[0].message.content
+      try:
+          print("Начало create_chat_completion")
+          async with cls.semaphore:
+            completion = await g4f.ChatCompletion.create_async(
+                model=g4f.models.gpt_35_turbo,
+                messages=messages
+            )
+          print("Завершение create_chat_completion")
+          return completion
+      except Exception as e:
+          # Обработка ошибки
+          print(f"Произошла ошибка: {e}")
+          return None  # Возврат None или другого значения, чтобы показать, что произошла ошибка
+
+
+        
+
 
   @classmethod
   def get_messages(cls, all_messages, all_users):
@@ -46,4 +69,12 @@ class Nova_bot:
             role = 'assistant'
       messages.append({'role': role, 'name': name, 'content': text})
     return messages
+  
+  
+# async def main():
+#   text = await Nova_bot.create_chat_completion([{"role": "user", "content": "Hello"}])
+#   print(text)
+
+# if __name__ == "__main__":
+#     asyncio.run(main())
           
