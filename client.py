@@ -88,12 +88,15 @@ async def echo_happy_birthday(message: Message):
     messages = get_messages(list(my_queue))    
     print(f'перед передачей в AI = {messages}')
     text = await novaai_instance.create_chat_completion(messages)
+    text = text.replace('Chatbase', '***')
+    text = text.replace('сhatbase', '***')
+    
     my_queue.append({'role': 'assistant', 'name': 'rtrs_pto_bot', 'content': text})
     # print(text)
-    await message.answer(text)
+    await message.reply(text)
 
 def get_messages(my_queue):
-    system_info = 'You are a helpful, chat assistant named "Toxic" who loves sarcasm and black humor very much. You should always introduce yourself as a Toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz and chat assistant. Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars and swearing. Kristina loves hiking. Timur also probably has positive qualities, but they are unknown. If the question is not addressed to you but to other chat participants, then you should send only a smiley face of your choice.'
+    system_info = 'You are a useful chat assistant named "Toxic", who loves sarcasm and black humor very much. You should always introduce yourself as Toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars and swearing. Kristina loves hiking. Timur also probably has positive qualities, but they are unknown. If the question is not addressed to you, but to other chat participants, then you should only send a smiley face of your choice. If necessary, stand up for Svetlana'
 
     messages = []
     messages.append({'role': 'system', 'content': system_info})

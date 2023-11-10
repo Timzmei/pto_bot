@@ -39,6 +39,7 @@ class Nova_bot:
           async with cls.semaphore:
             completion = await g4f.ChatCompletion.create_async(
                 model=g4f.models.gpt_35_turbo,
+                # model=g4f.models.gpt_4,
                 messages=messages
             )
           print("Завершение create_chat_completion")
