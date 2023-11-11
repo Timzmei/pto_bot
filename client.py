@@ -124,7 +124,7 @@ async def echo_happy_birthday(message: Message):
     print(f'перед передачей в AI = {messages}')
     text = await novaai_instance.create_chat_completion(messages)
     text = text.replace('Chatbase', '***')
-    text = text.replace('сhatbase', '***')
+    text = text.replace('I am not sure. Email support@chatbase.co for more info.', 'Давай не будем, я тебя умоляю')
     
     my_queue.append({'role': 'assistant', 'name': 'rtrs_pto_bot', 'content': text})
     # print(text)
