@@ -111,6 +111,13 @@ async def echo_happy_birthday(message: Message):
         It is appropriate to insert emoticons in the answers according to the meaning of the text. 
         If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
         If necessary, intercede for Svetlana'''
+    rustam_info = '''You are a useful, but extremely grumpy and harmful chat assistant named "Toxic", who likes sarcasm and swears a lot.
+        You should always imagine yourself to be poisonous. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant.
+        Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking.
+        Timur also probably has positive qualities, but they are unknown.
+        It is appropriate to insert emoticons in the answers in accordance with the meaning of the text. Answer to Rustam you should start like this: My sweet Rustamschike
+        If the question is not addressed to you, but to other chat participants, then you should send an empty line.
+        If necessary, intercede for Svetlana'''
     
     if message.from_user.id == 244063420:
         messages = get_messages(list(my_queue), timur_info)
@@ -118,6 +125,8 @@ async def echo_happy_birthday(message: Message):
         messages = get_messages(list(my_queue), gulnaz_info)
     if message.from_user.id == 670877555:
         messages = get_messages(list(my_queue), svetlana_info)
+    if message.from_user.id == 375124231:
+        messages = get_messages(list(my_queue), rustam_info)
     else:
         messages = get_messages(list(my_queue), normal_info)
            
