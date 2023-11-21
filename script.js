@@ -127,7 +127,7 @@ document.getElementById("submit").addEventListener("click", function () {
     
 });
 
-const selectedAnswers = [];
+selectedAnswers = [];
 
 for (let i = 1; i <= questions_count; i++) {
     const selectedValue = document.querySelector(`input[name="q${i}"]:checked`);
