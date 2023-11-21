@@ -43,9 +43,29 @@ async def buy_process(web_app_message):
     from_user_username = web_app_message.from_user.username
     from_user_id = web_app_message.from_user.id
     test_info = web_app_message.web_app_data.data
-    print(from_user_username, web_app_message.web_app_data.data)
-    # await web_app_message.answer(f'{web_app_message.data.data}')
-    await web_app_message.answer(f'Тест завершен.\nТестировался: @{from_user_username}\n{test_info}', reply_markup=ReplyKeyboardRemove())
+    
+    # Получаем информацию о тесте
+    test_info = test_info[-1]
+    test_name = test_info['test_name']
+    test_result = test_info['result']
+    text_result = test_info['text_result']
+
+    # Получаем информацию о вопросах и ответах
+    questions_answers = test_info[:-1]
+
+    # Выводим информацию о тесте
+    print(f"Название теста: {test_name}")
+    print(f"Результат: {test_result}")
+    print(f"Текстовый результат: {text_result}")
+
+    # Выводим информацию о вопросах и ответах
+    for qa in questions_answers:
+        print(f"\nВопрос: {qa['question']}")
+        print(f"Ответ: {qa['answer']}")
+    
+    # print(from_user_username, web_app_message.web_app_data.data)
+    
+    # await web_app_message.answer(f'Тест завершен.\nТестировался: @{from_user_username}\n{test_info}', reply_markup=ReplyKeyboardRemove())
 
 
 # Обработчик для команды /test

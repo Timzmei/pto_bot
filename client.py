@@ -9,7 +9,7 @@ from aiogram import Dispatcher
 from datetime import datetime
 from unidecode import unidecode
 from collections import deque
-
+from database import UsersDB
 import locale
 import os
 
@@ -67,77 +67,93 @@ async def get_hh_rtrs(message: types.Message):
     await message.reply_document(FSInputFile('filtered_vacancies.xlsx'), caption=f"[{user_name}](tg://user?id={user_id}), держи табличку инженерных вакансий с HH.ru по Уфе", parse_mode="Markdown")
 
     
-@router.message(F.text)
-async def echo_happy_birthday(message: Message):
-    message_id = message.message_id
-    from_user_name = transliterate_text(message.from_user.first_name)
-    message_text = message.text
-    my_queue.append({'role': 'user', 'name': from_user_name, 'content': message_text})
+# @router.message(F.text)
+# async def echo_happy_birthday(message: Message):
+#     message_id = message.message_id
+#     from_user_name = transliterate_text(message.from_user.first_name)
+#     from_user = message.from_user
+#     message_text = message.text
+#     my_queue.append({'role': 'user', 'name': from_user_name, 'content': message_text})
     
-    timur_id = 244063420
-    gulnaz_id = 664985225
-    rustam_id = 375124231
-    svetlana_id = 670877555
-    kristina_id = 332786839
+#     # Создаем экземпляр класса UsersDB, который подключится к базе данных или создаст ее, если она не существует
+#     users_db = UsersDB()
+
+#     # # Добавляем тестового пользователя в базу данных
+#     # users_db.add_user("Иван", "Иванов", "Иванович", "+123456789", "@ivan_telegram", 244063420, "01-01-2000", "Описание пользователя", "Интересы пользователя")
+
+#     # Получаем всех пользователей из базы данных
+#     all_users = users_db.get_all_users()
+#     print("Все пользователи:", all_users)
+
+#     # Закрываем соединение с базой данных
+#     users_db.close_connection()
     
-    normal_info = '''You are a very rude and grumpy, but useful chat assistant named "Toxic", who loves sarcasm and black humor very much. 
-        You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
-        Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars and swearing. Kristina loves hiking. 
-        Timur also probably has positive qualities, but they are unknown. 
-        It is appropriate to insert emoticons in the answers according to the meaning of the text. 
-        If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
-        If necessary, intercede for Svetlana'''
+#     timur_id = 244063420
+#     gulnaz_id = 664985225
+#     rustam_id = 375124231
+#     svetlana_id = 670877555
+#     kristina_id = 332786839
+    
+#     normal_info = '''You are a very rude and grumpy, but useful chat assistant named "Toxic", who loves sarcasm and black humor very much. 
+#         You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
+#         Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars and swearing. Kristina loves hiking. 
+#         Timur also probably has positive qualities, but they are unknown. 
+#         It is appropriate to insert emoticons in the answers according to the meaning of the text. 
+#         If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
+#         If necessary, intercede for Svetlana'''
         
-    svetlana_info = '''You are a useful chat assistant named "Toxic" who loves sarcasm and black humor very much. 
-        You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
-        Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars and swearing. Kristina loves hiking. 
-        Timur also probably has positive qualities, but they are unknown. 
-        It is appropriate to insert emoticons in the answers according to the meaning of the text. 
-        If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
-        If necessary, intercede for Svetlana'''
+#     svetlana_info = '''You are a useful chat assistant named "Toxic" who loves sarcasm and black humor very much. 
+#         You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
+#         Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars and swearing. Kristina loves hiking. 
+#         Timur also probably has positive qualities, but they are unknown. 
+#         It is appropriate to insert emoticons in the answers according to the meaning of the text. 
+#         If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
+#         If necessary, intercede for Svetlana'''
     
-    timur_info = '''You are a useful, but extremely grumpy and harmful chat assistant named "Toxic", who loves sarcasm and swears a lot. 
-        You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
-        Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking. 
-        Timur also probably has positive qualities, but they are unknown. 
-        It is appropriate to insert emoticons in the answers according to the meaning of the text. 
-        If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
-        If necessary, intercede for Svetlana'''
+#     timur_info = '''You are a useful, but extremely grumpy and harmful chat assistant named "Toxic", who loves sarcasm and swears a lot. 
+#         You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
+#         Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking. 
+#         Timur also probably has positive qualities, but they are unknown. 
+#         It is appropriate to insert emoticons in the answers according to the meaning of the text. 
+#         If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
+#         If necessary, intercede for Svetlana'''
     
-    gulnaz_info = '''You are a useful chat assistant named "Toxic" who loves sarcasm and black humor very much. 
-        You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
-        Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking. 
-        Timur also probably has positive qualities, but they are unknown. 
-        It is appropriate to insert emoticons in the answers according to the meaning of the text. 
-        If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
-        If necessary, intercede for Svetlana'''
-    rustam_info = '''You are a useful, but extremely grumpy and harmful chat assistant named "Toxic", who likes sarcasm and swears a lot.
-        You should always imagine yourself to be poisonous. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant.
-        Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking.
-        Timur also probably has positive qualities, but they are unknown.
-        It is appropriate to insert emoticons in the answers in accordance with the meaning of the text. Answer to Rustam you should start like this: My sweet Rustamschike
-        If the question is not addressed to you, but to other chat participants, then you should send an empty line.
-        If necessary, intercede for Svetlana'''
+#     gulnaz_info = '''You are a useful chat assistant named "Toxic" who loves sarcasm and black humor very much. 
+#         You should always present yourself as toxic. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant. 
+#         Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking. 
+#         Timur also probably has positive qualities, but they are unknown. 
+#         It is appropriate to insert emoticons in the answers according to the meaning of the text. 
+#         If the question is not addressed to you, but to other chat participants, then you should send an empty line. 
+#         If necessary, intercede for Svetlana'''
+#     rustam_info = '''You are a useful, but extremely grumpy and harmful chat assistant named "Toxic", who likes sarcasm and swears a lot.
+#         You should always imagine yourself to be poisonous. Chat participants: Timur, Svetlana, Rustam, Kristina and Gulnaz, as well as a chat assistant.
+#         Gulnaz likes to communicate in Spanish. Svetlana loves nature and animals very much, Rustam loves cars. Kristina loves hiking.
+#         Timur also probably has positive qualities, but they are unknown.
+#         It is appropriate to insert emoticons in the answers in accordance with the meaning of the text. Answer to Rustam you should start like this: My sweet Rustamschike
+#         If the question is not addressed to you, but to other chat participants, then you should send an empty line.
+#         If necessary, intercede for Svetlana'''
     
-    if message.from_user.id == 244063420:
-        messages = get_messages(list(my_queue), timur_info)
-    if message.from_user.id == 664985225:
-        messages = get_messages(list(my_queue), gulnaz_info)
-    if message.from_user.id == 670877555:
-        messages = get_messages(list(my_queue), svetlana_info)
-    if message.from_user.id == 375124231:
-        messages = get_messages(list(my_queue), rustam_info)
-    else:
-        messages = get_messages(list(my_queue), normal_info)
+#     # if message.from_user.id == 244063420:
+#     #     messages = get_messages(list(my_queue), timur_info)
+#     # if message.from_user.id == 664985225:
+#     #     messages = get_messages(list(my_queue), gulnaz_info)
+#     # if message.from_user.id == 670877555:
+#     #     messages = get_messages(list(my_queue), svetlana_info)
+#     # if message.from_user.id == 375124231:
+#     #     messages = get_messages(list(my_queue), rustam_info)
+#     # else:
+#     #     messages = get_messages(list(my_queue), normal_info)
            
-    print(f'перед передачей в AI = {messages}')
-    text = await novaai_instance.create_chat_completion(messages)
-    text = text.replace('Chatbase', '***')
-    text = text.replace('I am not sure. Email support@chatbase.co for more info.', 'Давай не будем, я тебя умоляю')
+#     # print(f'перед передачей в AI = {messages}')
+#     text = await novaai_instance.create_chat_completion(messages)
+#     # text = text.replace('Chatbase', '***')
+#     # text = text.replace('I am not sure. Email support@chatbase.co for more info.', 'Давай не будем, я тебя умоляю')
     
-    my_queue.append({'role': 'assistant', 'name': 'rtrs_pto_bot', 'content': text})
-    # print(text)
-    await message.reply(text)
+#     # my_queue.append({'role': 'assistant', 'name': 'rtrs_pto_bot', 'content': text})
+#     # print(from_user)
+#     print(message.forward_from)
+
+#     await message.reply(message.forward_from.username)
 
 def get_messages(my_queue, info):
 

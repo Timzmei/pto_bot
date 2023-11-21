@@ -127,9 +127,24 @@ document.getElementById("submit").addEventListener("click", function () {
     
 });
 
+const selectedAnswers = [];
+
+for (let i = 1; i <= questions_count; i++) {
+    const selectedValue = document.querySelector(`input[name="q${i}"]:checked`);
+
+    if (!selectedValue) {
+        selectedAnswers.push({ question: `Вопрос ${i}`, answer: 'Ответ не выбран' });
+    } else {
+        const questionText = document.querySelector(`.question:nth-child(${i}) p`).textContent;
+        const answerText = selectedValue.parentElement.textContent.trim();
+        selectedAnswers.push({ question: questionText, answer: answerText });
+    }
+}
+
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
     console.log(resultText);
-    tg.sendData(`Название теста: ${fullTestName}, \nРезультат: ${totalScore};\n${resultText}`);
+    selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
+    tg.sendData(selectedAnswers);
     Telegram.WebApp.close();
 
 });
