@@ -127,24 +127,24 @@ document.getElementById("submit").addEventListener("click", function () {
     
 });
 
-let selectedAnswers = [];
 
-for (let i = 1; i <= questions_count; i++) {
-    const selectedValue = document.querySelector(`input[name="q${i}"]:checked`);
-
-    if (!selectedValue) {
-        selectedAnswers.push({ question: `Вопрос ${i}`, answer: 'Ответ не выбран' });
-    } else {
-        const questionText = document.querySelector(`.question:nth-child(${i}) p`).textContent;
-        const answerText = selectedValue.parentElement.textContent.trim();
-        selectedAnswers.push({ question: questionText, answer: answerText });
-    }
-}
-selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+    selectedAnswers = [];
+
+    for (let i = 1; i <= questions_count; i++) {
+        const selectedValue = document.querySelector(`input[name="q${i}"]:checked`);
+
+        if (!selectedValue) {
+            selectedAnswers.push({ question: `Вопрос ${i}`, answer: 'Ответ не выбран' });
+        } else {
+            const questionText = document.querySelector(`.question:nth-child(${i}) p`).textContent;
+            const answerText = selectedValue.parentElement.textContent.trim();
+            selectedAnswers.push({ question: questionText, answer: answerText });
+        }
+    }
     console.log(resultText);
-    
+    selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
     tg.sendData(selectedAnswers);
     Telegram.WebApp.close();
 
