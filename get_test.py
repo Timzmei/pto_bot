@@ -42,16 +42,18 @@ web_app = WebAppInfo(url='https://timzmei.github.io/pto_bot')
 async def buy_process(web_app_message):
     from_user_username = web_app_message.from_user.username
     from_user_id = web_app_message.from_user.id
-    test_info = web_app_message.web_app_data.data
+    data_test = web_app_message.web_app_data.data
     
     # Получаем информацию о тесте
-    test_info = test_info[-1]
+    test_info = data_test[-1]
+    print(f'data_test: {data_test}')
+    print(f'test_info: {test_info}')
     test_name = test_info['test_name']
     test_result = test_info['result']
     text_result = test_info['text_result']
 
     # Получаем информацию о вопросах и ответах
-    questions_answers = test_info[:-1]
+    questions_answers = data_test[:-1]
 
     # Выводим информацию о тесте
     print(f"Название теста: {test_name}")
@@ -99,11 +101,10 @@ async def buy_process(web_app_message):
 
 @router.message(Command("тест"))
 async def command_webview(message: Message):
-    param_name = "test_BDI"
     kb = [
         [
             types.KeyboardButton(text="Шкала депрессии Бека"
-                                 , web_app=WebAppInfo(url=f"https://timzmei.github.io/pto_bot?paramName=test_BDI"))
+                                 , web_app=WebAppInfo(url=f"https://timzmei.github.io/pto_bot?paramName=test_BDI_mini"))
         ],
         [
             types.KeyboardButton(text="Шкала тревоги Бека"
