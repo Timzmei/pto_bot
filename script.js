@@ -116,12 +116,13 @@ document.getElementById("submit").addEventListener("click", function () {
             return;
         } else {
             answersDictionary[`Вопрос ${i}`] = selectedValue.value; // Здесь номер ответа сохраняется в словаре
+            tg.MainButton.setText("Получить результат");
+            tg.MainButton.show();
         }
         totalScore += parseInt(selectedValue.value);
     }
     
-    tg.MainButton.setText("Получить результат");
-    tg.MainButton.show();
+    
 
     if (selectTest != "SCL_90_R") {
         const resultDiv = document.getElementById("result");
@@ -158,7 +159,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     //     }
     // }
     // selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
-    tg.sendData(answersDictionary);
+    
+    tg.sendData(resultText);
     Telegram.WebApp.close();
 
 });
