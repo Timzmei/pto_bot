@@ -131,7 +131,7 @@ document.getElementById("submit").addEventListener("click", function () {
         .then(response => response.json())
         .then(data => {
             // Получаем результат теста на основе баллов
-            resultText = getResultText(totalScore, data.resultRanges);
+            resultText = getResultText(totalScore, data);
             resultDiv.innerHTML += `<br>${resultText}`;
             // Выводим результат на странице или делаем с ним что-то еще
             // console.log(resultText);
