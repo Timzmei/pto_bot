@@ -119,6 +119,7 @@ async def buy_process(web_app_message):
     from_user_username = web_app_message.from_user.full_name
     from_user_id = web_app_message.from_user.id
     data_test_str = web_app_message.web_app_data.data
+    print(f'data_test_str: {data_test_str}')
     data_test = json.loads(data_test_str)
     # Получаем информацию о тесте
     test_info = data_test[-1]

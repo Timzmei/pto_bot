@@ -160,7 +160,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     // }
     // selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
     
-    tg.sendData(answersDictionary);
+    tg.sendData(resultText);
     Telegram.WebApp.close();
 
 });
