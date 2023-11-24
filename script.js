@@ -61,7 +61,7 @@ fetch(`${selectTest}.json`)
             const questionP = document.createElement("p");
             questionP.className = "bold-red-text";
             questionP.textContent = (index + 1) + ". " + q.question;
-            questions_count = index + 1;;
+            questions_count = index + 1;
 
             questionDiv.appendChild(questionP);
 
@@ -160,7 +160,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     // }
     // selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
     
-    tg.sendData(resultText);
+    tg.sendData("resultText");
     Telegram.WebApp.close();
 
 });

@@ -25,6 +25,9 @@ let totalScore = 0;
 let resultText = ``;
 let questions_count = 0;
 let fullTestName = '';
+
+let answersDictionary = {};
+
 // let selectedValue = false;
 
 
@@ -58,7 +61,7 @@ fetch(`${selectTest}.json`)
             const questionP = document.createElement("p");
             questionP.className = "bold-red-text";
             questionP.textContent = (index + 1) + ". " + q.question;
-            questions_count = index + 1;;
+            questions_count = index + 1;
 
             questionDiv.appendChild(questionP);
 
@@ -84,6 +87,7 @@ fetch(`${selectTest}.json`)
     .catch(error => {
         console.error("Ошибка при загрузке теста: " + error);
     });
+    
 
 function getResultText(score, resultRanges) {
     for (const range of resultRanges) {
