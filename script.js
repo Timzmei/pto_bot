@@ -26,7 +26,7 @@ let resultText = ``;
 let questions_count = 0;
 let fullTestName = '';
 
-let answersDictionary = {};
+let answersDictionary = [];
 
 // let selectedValue = false;
 
@@ -115,7 +115,8 @@ document.getElementById("submit").addEventListener("click", function () {
             marker = false;
             return;
         } else {
-            answersDictionary[`Вопрос ${i}`] = selectedValue.value; // Здесь номер ответа сохраняется в словаре
+            answersDictionary.push({ question:`Вопрос ${i}`, answer: selectedValue.value });
+            // answersDictionary[`Вопрос ${i}`] = selectedValue.value; // Здесь номер ответа сохраняется в словаре
             tg.MainButton.setText("Получить результат");
             tg.MainButton.show();
         }
@@ -159,8 +160,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     //     }
     // }
     // selectedAnswers.push({ test_name: fullTestName, result: totalScore, text_result: resultText });
-    
-    tg.sendData(resultText);
+    // tg.MainButton.setText(answersDictionary[1]);
+    tg.sendData(answersDictionary);
     Telegram.WebApp.close();
 
 });
