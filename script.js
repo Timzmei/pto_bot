@@ -14,19 +14,6 @@ try {
 } catch (error) {
     p.innerText = `Таинственный Незнакомец`;
 }
-// Добавляем поля для имени и телефона в форму
-const nameInput = document.createElement("input");
-nameInput.type = "text";
-nameInput.placeholder = "Введите ваше имя";
-nameInput.id = "username"; // уникальный идентификатор для имени
-
-const phoneInput = document.createElement("input");
-phoneInput.type = "tel";
-phoneInput.placeholder = "Введите ваш телефон";
-phoneInput.id = "phone"; // уникальный идентификатор для телефона
-
-form.insertBefore(nameInput, document.getElementById("submit")); // Вставляем поля перед кнопкой "Отправить"
-form.insertBefore(phoneInput, document.getElementById("submit")); // Вставляем поля перед кнопкой "Отправить"
 
 
 
@@ -65,7 +52,19 @@ fetch(`${selectTest}.json`)
     .then(data => {
         fullTestName = data.testName;
         myHeading.textContent = fullTestName;
+        // Добавляем поля для имени и телефона в форму
+        const nameInput = document.createElement("input");
+        nameInput.type = "text";
+        nameInput.placeholder = "Введите ваше имя";
+        nameInput.id = "username"; // уникальный идентификатор для имени
 
+        const phoneInput = document.createElement("input");
+        phoneInput.type = "tel";
+        phoneInput.placeholder = "Введите ваш телефон";
+        phoneInput.id = "phone"; // уникальный идентификатор для телефона
+
+        form.insertBefore(nameInput, document.getElementById("submit")); // Вставляем поля перед кнопкой "Отправить"
+        form.insertBefore(phoneInput, document.getElementById("submit")); // Вставляем поля перед кнопкой "Отправить"
 
         // Динамически создать форму с вопросами и ответами
         data.questions.forEach((q, index) => {
