@@ -120,10 +120,10 @@ document.getElementById("submit").addEventListener("click", function () {
             tg.MainButton.setText("Получить результат");
             tg.MainButton.show();
         }
-        totalScore += parseInt(selectedValue.value);
+        
     }
     
-    
+    answersDictionary.push({ test_name: selectTest });
 
     if (selectTest != "SCL_90_R") {
         const resultDiv = document.getElementById("result");
