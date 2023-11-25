@@ -7,6 +7,13 @@ tg.MainButton.color = '#007BFF';
 
 let usercard = document.getElementById("usercard");
 let p = document.createElement("p");
+try {
+    let firstName = tg.initDataUnsafe.user.first_name;
+    let lastName = tg.initDataUnsafe.user.last_name;
+    p.innerText = `${firstName}${lastName}`;
+} catch (error) {
+    p.innerText = `Таинственный Незнакомец`;
+}
 // Добавляем поля для имени и телефона в форму
 const nameInput = document.createElement("input");
 nameInput.type = "text";
