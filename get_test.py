@@ -73,7 +73,7 @@ def create_pdf(test_data, answers_array, result_test, from_user_username, from_u
     
     add_info(f"Имя тестируемого:", 45, y_position, "DejaVu-Bold", 10, black)
     y_position += 20
-    add_info(f"{from_user_username}, {user_name}", 180, y_position, "DejaVu", 9, black)
+    add_info(f"{from_user_username}, {phone}", 180, y_position, "DejaVu", 9, black)
     c.rect(170, y_position + 15, 250, 18)  # Координаты и размеры рамки
 
     add_info(f"Лечащий врач:", 45, y_position, "DejaVu-Bold", 10, black)  # Поле для заполнения
@@ -87,7 +87,7 @@ def create_pdf(test_data, answers_array, result_test, from_user_username, from_u
     add_info(f"{test_name}", 180, y_position, "DejaVu", 9, black)
   
     # Добавляем логотип клиники
-    c.drawImage('MentalHelp.jpg', 450, 690, width=100, height=100)
+    c.drawImage('MentalHelp.jpg', 450, 710, width=80, height=80)
        
     add_info("Результаты теста:", 45, y_position, "DejaVu-Bold", 10, black)
     
