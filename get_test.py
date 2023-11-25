@@ -67,11 +67,11 @@ def create_pdf(test_data, answers_array, result_test, from_user_username, from_u
     # Добавление вопросов и ответов из answersArray
     add_info("Результаты теста:", y_position)
     for i, answer_dict in enumerate(answers_array, start=1):
-        for question_key, answer_value in answer_dict.items():
-            question_number = int(question_key.split()[1])
-            question_text = test_data["questions"][question_number - 1]["question"]
-            add_info(f"Вопрос {i}: {question_text}", y_position)
-            add_info(f"Ответ: {answer_value}", y_position)
+        question_number = int(answer_dict['question'].split()[1]) - 1
+        question_text = test_data["questions"][question_number]["question"]
+        answer_value = answer_dict['answer']
+        add_info(f"Вопрос {i}: {question_text}", y_position)
+        add_info(f"Ответ: {answer_value}", y_position)
     
     # Добавление баллов по каждой шкале
     add_info("Баллы по каждой шкале:", y_position)
@@ -126,14 +126,13 @@ def get_total_scores(answersArray, test_data):
     total_score = 0
     
     for answer_dict in answersArray:
-        for question_key, answer_value in answer_dict.items():
-            question_number = int(question_key.split()[1]) - 1  # Получаем номер вопроса из ключа словаря
-            question = test_data["questions"][question_number]
-            selected_answer = next((ans for ans in question["answers"] if ans["value"] == int(answer_value)), None)
-            if selected_answer:
-                total_score += selected_answer["score"]
+        question_number = int(answer_dict['question'].split()[1]) - 1  # Получаем номер вопроса из словаря
+        question = test_data["questions"][question_number]
+        selected_answer = next((ans for ans in question["answers"] if ans["value"] == int(answer_dict['answer'])), None)
+        if selected_answer:
+            total_score += selected_answer["value"]
     
-    result_ranges = test_data['result_ranges']
+    result_ranges = test_data['resultRanges']
     result_text = ''
 
     for result_range in result_ranges:

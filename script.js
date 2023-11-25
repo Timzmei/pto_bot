@@ -120,6 +120,8 @@ document.getElementById("submit").addEventListener("click", function () {
             tg.MainButton.setText("Получить результат");
             tg.MainButton.show();
         }
+
+        totalScore += parseInt(selectedValue.value);
         
     }
     
