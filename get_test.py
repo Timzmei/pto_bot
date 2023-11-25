@@ -44,39 +44,69 @@ pdfmetrics.registerFont(TTFont('DejaVu-Italic', 'dejavu-sans.oblique.ttf'))  # �
 
 
 # Создаем PDF-файл
-def create_pdf(test_data, answers_array, result_test, from_user_username, from_user_id, test_name):
-    pdf_filename = "test_results.pdf"
+def create_pdf(test_data, answers_array, result_test, from_user_username, from_user_id, test_name, user_name, phone):    
+    now = datetime.now()
+    current_date = now.strftime("%d.%m.%Y")
+    
+    pdf_filename = "Результаты теста.pdf"
     
     c = canvas.Canvas(pdf_filename, pagesize=letter)
-    c.setFont("Helvetica", 12)
-    
+    # Устанавливаем цвет шрифта    
     y_position = 750  # Начальная позиция на странице
     
     # Добавление информации на страницу
-    def add_info(text, ypos):
+    def add_info(text, x_position, ypos, font, font_size, font_color):
         nonlocal y_position
-        c.drawString(100, ypos, text)
-        y_position -= 20
+        c.setFillColor(font_color)
+        c.setFont(font, font_size)
+        c.drawString(x_position, ypos, text)
         if y_position < 50:  # Если информация не помещается, создаем новую страницу
             c.showPage()
-            c.setFont("Helvetica", 12)
+            c.setFillColor(font_color)
+            c.setFont(font, font_size)
             y_position = 750  # Сбрасываем позицию на новой странице
-            c.drawString(100, y_position, text)
-            y_position -= 20
+            c.drawString(x_position, y_position, text)
+        y_position -= 20
     
-    # Добавление вопросов и ответов из answersArray
-    add_info("Результаты теста:", y_position)
+    
+    # Добавляем информацию о тестируемом, лечащем враче и клинике
+    
+    add_info(f"Имя тестируемого:", 45, y_position, "DejaVu-Bold", 10, black)
+    y_position += 20
+    add_info(f"{from_user_username}, {user_name}", 180, y_position, "DejaVu", 9, black)
+    c.rect(170, y_position + 15, 250, 18)  # Координаты и размеры рамки
+
+    add_info(f"Лечащий врач:", 45, y_position, "DejaVu-Bold", 10, black)  # Поле для заполнения
+    c.rect(170, y_position + 15, 250, 18)  # Координаты и размеры рамки
+    # Добавляем информацию о тесте и результатах
+    add_info(f"Дата прохождения:", 45, y_position, "DejaVu-Bold", 10, black)
+    y_position += 20
+    add_info(f"{current_date}", 180, y_position, "DejaVu", 9, black)
+    add_info(f"Название теста:", 45, y_position, "DejaVu-Bold", 10, black)
+    y_position += 20
+    add_info(f"{test_name}", 180, y_position, "DejaVu", 9, black)
+  
+    # Добавляем логотип клиники
+    c.drawImage('MentalHelp.jpg', 450, 690, width=100, height=100)
+       
+    add_info("Результаты теста:", 45, y_position, "DejaVu-Bold", 10, black)
+    
+    for scale, score in result_test.items():
+        add_info(f"{scale}:", 45, y_position, "DejaVu-Bold", 10, black)
+        y_position += 20
+        add_info(f"{score}", 180, y_position, "DejaVu", 9, black)
+        
+    # Добавление вопросов и ответов из answersArray    
+    print(answers_array)
     for i, answer_dict in enumerate(answers_array, start=1):
         question_number = int(answer_dict['question'].split()[1]) - 1
-        question_text = test_data["questions"][question_number]["question"]
-        answer_value = answer_dict['answer']
-        add_info(f"Вопрос {i}: {question_text}", y_position)
-        add_info(f"Ответ: {answer_value}", y_position)
+        question = test_data["questions"][question_number]
+        question_text = question["question"]
+        answer_index = int(answer_dict['answer'])
+        answer_text = question["answers"][answer_index]["text"]
+        add_info(f"Вопрос {i}: {question_text}", 70, y_position, "DejaVu-Bold", 8, blue)
+        add_info(f"Ответ: {answer_text}", 100, y_position, "DejaVu-Italic", 8, black)
     
-    # Добавление баллов по каждой шкале
-    add_info("Баллы по каждой шкале:", y_position)
-    for scale, score in result_test.items():
-        add_info(f"{scale}: {score}", y_position)
     
     # # Добавление общего балла (GSI), индекс PSI и индекс PDSI
     # add_info(f"Общий балл (GSI): {total_score}", y_position)
@@ -99,17 +129,20 @@ def get_result_test_scl(answersArray, test_data):
     
     # Суммирование баллов по каждой шкале
     scales = test_data["keys"][0]  # Получаем ключи для шкал
-
+    # print(f'scales = {scales}')
     scale_scores = {}  # Словарь для хранения баллов по каждой шкале
-
+    # print(f'scales.items() = {scales.items()}')
     for scale, items in scales.items():
-        scale_scores[scale] = sum(1 for item in answersArray if int(item[f"Вопрос {item}"]) in items) / len(items)
+        print(f'scale = {scale}')
+        print(f'items = {items}')
+
+        scale_scores[scale] = sum(1 for item in answersArray if int(item["answer"]) in items) / len(items)
 
     # Вычисление общего балла (индекс GSI)
     gsi_index = sum(scale_scores.values()) / len(answersArray)
 
     # Подсчет количества пунктов от 1 до 4 (индекс PSI)
-    psi_count = sum(1 for item in answersArray if 1 <= int(item[f"Вопрос {item}"]) <= 4)
+    psi_count = sum(1 for item in answersArray if 1 <= int(item["answer"]) <= 4)
 
     # Расчет индекса выраженности дистресса PDSI
     pdsi_index = (gsi_index * len(answersArray)) / psi_count if psi_count != 0 else 0
@@ -118,7 +151,7 @@ def get_result_test_scl(answersArray, test_data):
     scale_scores['psi_count'] = psi_count
     scale_scores['pdsi_index'] = pdsi_index
 
-    return scale_scores, gsi_index, psi_count, pdsi_index
+    return scale_scores
 
 def get_total_scores(answersArray, test_data):
     
@@ -167,6 +200,8 @@ async def buy_process(web_app_message):
     print(f'data_test: {data_test}')
     print(f'test_info: {test_info}')
     test_name = test_info.get('test_name', 'Название теста не указано')
+    user_name = test_info.get('name', 'Имя не указано')
+    phone = test_info.get('phone', 'Номер телефона не указан')
     # test_result = test_info.get('result', 'Результат не указан')
     # text_result = test_info.get('text_result', 'Текстовый результат не указан')
     
@@ -185,7 +220,7 @@ async def buy_process(web_app_message):
         result_test = get_total_scores(answers_array, file_data)
     
     
-    pdf_file = create_pdf(file_data, answers_array, result_test, from_user_username, from_user_id, full_test_name)
+    pdf_file = create_pdf(file_data, answers_array, result_test, from_user_username, from_user_id, full_test_name, user_name, phone)
 
     # Выводим информацию о тесте
     print(f"Название теста: {full_test_name}")

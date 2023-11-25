@@ -52,6 +52,20 @@ fetch(`${selectTest}.json`)
     .then(data => {
         fullTestName = data.testName;
         myHeading.textContent = fullTestName;
+        // Добавляем поля для имени и телефона в форму
+        const nameInput = document.createElement("input");
+        nameInput.type = "text";
+        nameInput.placeholder = "Введите ваше имя";
+        nameInput.id = "username"; // уникальный идентификатор для имени
+
+        const phoneInput = document.createElement("input");
+        phoneInput.type = "tel";
+        phoneInput.placeholder = "Введите ваш телефон";
+        phoneInput.id = "phone"; // уникальный идентификатор для телефона
+
+        form.insertBefore(nameInput, document.getElementById("submit")); // Вставляем поля перед кнопкой "Отправить"
+        form.insertBefore(phoneInput, document.getElementById("submit")); // Вставляем поля перед кнопкой "Отправить"
+
         // Динамически создать форму с вопросами и ответами
         data.questions.forEach((q, index) => {
             // console.log(q);
@@ -106,6 +120,14 @@ function getResultText(score, data) {
 document.getElementById("submit").addEventListener("click", function () {
     totalScore = 0;
     let marker = true;
+    let userName = document.getElementById("username").value; // Получаем введенное имя
+    let userPhone = document.getElementById("phone").value; // Получаем введенный телефон
+
+    // Проверяем, заполнены ли поля имени и телефона
+    if (!userName || !userPhone) {
+        alert("Пожалуйста, введите имя и телефон.");
+        return;
+    }
 
     for (let i = 1; i <= questions_count; i++) {
         const selectedValue = document.querySelector(`input[name="q${i}"]:checked`);
@@ -125,7 +147,7 @@ document.getElementById("submit").addEventListener("click", function () {
         
     }
     
-    answersDictionary.push({ test_name: selectTest });
+    answersDictionary.push({ test_name: selectTest, name: userName, phone: userPhone }); // Добавляем имя и телефон в данные
 
     if (selectTest != "SCL_90_R") {
         const resultDiv = document.getElementById("result");
