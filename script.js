@@ -251,7 +251,7 @@ document.getElementById("submit").addEventListener("click", function () {
                 section.questions.forEach((question, qIndex) => {
                     const userInput = document.querySelector(`input[name="section-${index}-${qIndex + 1}"]`);
 
-                    console.log(userInput);
+                    // console.log(userInput);
                     let selectedValue;
 
                     if (question.type == 'radio') {
@@ -281,8 +281,7 @@ document.getElementById("submit").addEventListener("click", function () {
                         }
                         
                     }
-                    tg.MainButton.setText("Получить результат");
-                    tg.MainButton.show();
+                    
                     // const selectedValue = document.querySelector(`input[name="section-${index}-${qIndex + 1}"]:checked`);
 
                     // if (!selectedValue) {
@@ -299,13 +298,13 @@ document.getElementById("submit").addEventListener("click", function () {
 
 
             });
+        answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor });
 
         });
 
-
-
         // Добавляем имя и телефон в данные
-        answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor });
+        tg.MainButton.setText("Получить результат");
+        tg.MainButton.show();
     }
     
     
