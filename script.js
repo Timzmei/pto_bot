@@ -239,6 +239,7 @@ document.getElementById("submit").addEventListener("click", function () {
                 // console.log(resultText);
             });
         } 
+
     } else {
         // Проходим по всем вопросам в форме
         answersDictionary = [];
@@ -278,6 +279,8 @@ document.getElementById("submit").addEventListener("click", function () {
                             alert("Пожалуйста, введите количество периодов.");
                             return;
                         }
+                        tg.MainButton.setText("Получить результат");
+                        tg.MainButton.show();
                     }
                     // const selectedValue = document.querySelector(`input[name="section-${index}-${qIndex + 1}"]:checked`);
 
