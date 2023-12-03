@@ -279,9 +279,10 @@ document.getElementById("submit").addEventListener("click", function () {
                             alert("Пожалуйста, введите количество периодов.");
                             return;
                         }
-                        tg.MainButton.setText("Получить результат");
-                        tg.MainButton.show();
+                        
                     }
+                    tg.MainButton.setText("Получить результат");
+                    tg.MainButton.show();
                     // const selectedValue = document.querySelector(`input[name="section-${index}-${qIndex + 1}"]:checked`);
 
                     // if (!selectedValue) {
