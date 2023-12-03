@@ -103,7 +103,13 @@ def create_pdf(test_data, answers_array, result_test, from_user_username, from_u
         question = test_data["questions"][question_number]
         question_text = question["question"]
         answer_index = int(answer_dict['answer'])
-        answer_text = question["answers"][answer_index]["text"]
+        for ans in question["answers"]:
+            print(f"ans = {ans}")
+            # print(f"ans['text'] = {ans.text}")
+            if ans["value"] == answer_index:
+                answer_text = ans["text"]
+                print(f"answer_text = {answer_text}")
+            # answer_text = question["answers"][answer_index]["text"]
         add_info(f"Вопрос {i}: {question_text}", 70, y_position, "DejaVu-Bold", 8, blue)
         add_info(f"Ответ: {answer_text}", 100, y_position, "DejaVu-Italic", 8, black)
     
@@ -139,7 +145,10 @@ def get_result_test_scl(answersArray, test_data):
         scale_scores[scale] = sum(1 for item in answersArray if int(item["answer"]) in items) / len(items)
 
     # Вычисление общего балла (индекс GSI)
-    gsi_index = sum(scale_scores.values()) / len(answersArray)
+    for item in answersArray:
+        gsi_index += int(item["answer"])
+        
+    gsi_index = gsi_index / len(answersArray)
 
     # Подсчет количества пунктов от 1 до 4 (индекс PSI)
     psi_count = sum(1 for item in answersArray if 1 <= int(item["answer"]) <= 4)
@@ -207,6 +216,8 @@ async def buy_process(web_app_message):
     
     file_data = get_test_data(test_name)
     
+    print(file_data)
+    
     full_test_name = file_data['testName']
 
     # Получаем информацию о вопросах и ответах
@@ -224,15 +235,6 @@ async def buy_process(web_app_message):
 
     # Выводим информацию о тесте
     print(f"Название теста: {full_test_name}")
-    # print(f"Результат: {test_result}")
-    # print(f"Текстовый результат: {text_result}")
-
-    # # Выводим информацию о вопросах и ответах
-    # for qa in questions_answers:
-    #     print(f"\nВопрос: {qa['question']}")
-    #     print(f"Ответ: {qa['answer']}")
-    
-    # print(from_user_username, web_app_message.web_app_data.data)
     
     await web_app_message.answer(f'Тест завершен.\nТестировался: {from_user_username}\nНазвание теста: {full_test_name}\nРезультат: {result_test}\n', reply_markup=ReplyKeyboardRemove())
     await bot.send_document(244063420, FSInputFile('Результаты теста.pdf'), caption=f'Тест завершен.\nТестировался: {from_user_username}\nНазвание теста: {full_test_name}\nРезультат: {result_test}')
@@ -285,6 +287,10 @@ async def command_webview(message: Message):
         [
             types.KeyboardButton(text="Опросник выраженности психопатологической симптоматики"
                                  , web_app=WebAppInfo(url=f"https://timzmei.github.io/pto_bot?paramName=SCL_90_R"))
+        ],
+        [
+            types.KeyboardButton(text="Опросник выраженности психопатологической симптоматики"
+                                 , web_app=WebAppInfo(url=f"https://timzmei.github.io/pto_bot?paramName=HCL_32"))
         ],
     ]
     keyboard = types.ReplyKeyboardMarkup(
