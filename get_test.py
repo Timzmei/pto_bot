@@ -289,7 +289,7 @@ async def command_webview(message: Message):
                                  , web_app=WebAppInfo(url=f"https://timzmei.github.io/pto_bot?paramName=SCL_90_R"))
         ],
         [
-            types.KeyboardButton(text="Опросник выраженности психопатологической симптоматики"
+            types.KeyboardButton(text="Опросник для выявления гипомании"
                                  , web_app=WebAppInfo(url=f"https://timzmei.github.io/pto_bot?paramName=HCL_32"))
         ],
     ]

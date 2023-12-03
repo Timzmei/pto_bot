@@ -261,8 +261,8 @@ document.getElementById("submit").addEventListener("click", function () {
                             return;
                         }
                         answersDictionary.push({
-                        section: section.section,
-                        question: question.question,
+                        section: index,
+                        question: `Вопрос ${qIndex + 1}`,
                         answer: selectedValue.value
                         });
 
@@ -270,8 +270,8 @@ document.getElementById("submit").addEventListener("click", function () {
                         if (userInput.value.trim() !== '') {
                             selectedValue = userInput.value;
                             answersDictionary.push({
-                            section: section.section,
-                            question: question.question,
+                            section: index,
+                            question: `Вопрос ${qIndex + 1}`,
                             answer: selectedValue
                             });
                         } else {
