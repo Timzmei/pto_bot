@@ -141,6 +141,8 @@ fetch(`${selectTest}.json`)
                         question.answers.forEach((answer) => {
                             const answerInput = document.createElement("input");
                             answerInput.type = "text";
+                            answerInput.classList.add('larger-input'); // Добавляем класс для увеличения размера поля ввода имени
+
                             answerInput.name = `section-${indexS}-${indexQ + 1}`;
                             answerInput.placeholder = answer.text
 
@@ -215,6 +217,7 @@ document.getElementById("submit").addEventListener("click", function () {
         } else {
             answersDictionary.push({ question:`Вопрос ${i}`, answer: selectedValue.value });
             // answersDictionary[`Вопрос ${i}`] = selectedValue.value; // Здесь номер ответа сохраняется в словаре
+            answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor }); // Добавляем имя и телефон в данные
             tg.MainButton.setText("Получить результат");
             tg.MainButton.show();
         }
@@ -223,7 +226,7 @@ document.getElementById("submit").addEventListener("click", function () {
         
         }
         
-        answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor }); // Добавляем имя и телефон в данные
+        
 
         if (selectTest != "SCL_90_R") {
             const resultDiv = document.getElementById("result");
@@ -238,6 +241,10 @@ document.getElementById("submit").addEventListener("click", function () {
                 // Выводим результат на странице или делаем с ним что-то еще
                 // console.log(resultText);
             });
+            answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor }); // Добавляем имя и телефон в данные
+
+            tg.MainButton.setText("Получить результат");
+            tg.MainButton.show();
         } 
 
     } else {
@@ -259,12 +266,16 @@ document.getElementById("submit").addEventListener("click", function () {
                         if (!selectedValue) {
                             alert("Пожалуйста, ответьте на все вопросы.");
                             return;
+                        } else {
+                            answersDictionary.push({
+                                section: index,
+                                question: `Вопрос ${qIndex + 1}`,
+                                answer: selectedValue.value  
+                            }); 
+                            
                         }
-                        answersDictionary.push({
-                        section: index,
-                        question: `Вопрос ${qIndex + 1}`,
-                        answer: selectedValue.value
-                        });
+                        
+                       
 
                     } else if (question.type == 'text') {
                         if (userInput.value.trim() !== '') {
@@ -274,6 +285,9 @@ document.getElementById("submit").addEventListener("click", function () {
                             question: `Вопрос ${qIndex + 1}`,
                             answer: selectedValue
                             });
+                            answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor });
+                            tg.MainButton.setText("Получить результат");
+                            tg.MainButton.show();
                         } else {
                             // Если поле не заполнено
                             alert("Пожалуйста, введите количество периодов.");
@@ -298,13 +312,9 @@ document.getElementById("submit").addEventListener("click", function () {
 
 
             });
-        answersDictionary.push({ test_name: selectTest, name: userName, doc: doctor });
+        
 
         });
-
-        // Добавляем имя и телефон в данные
-        tg.MainButton.setText("Получить результат");
-        tg.MainButton.show();
     }
     
     
