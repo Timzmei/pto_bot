@@ -22,6 +22,7 @@ from reportlab.lib.colors import black, blue, green
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
+from reportlab.lib.utils import simpleSplit
 from datetime import datetime
 from flask import send_file
 
@@ -59,14 +60,32 @@ def create_pdf(test_data, answers_array, result_test, from_user_username, from_u
         nonlocal y_position
         c.setFillColor(font_color)
         c.setFont(font, font_size)
-        c.drawString(x_position, ypos, text)
-        if y_position < 50:  # Если информация не помещается, создаем новую страницу
-            c.showPage()
-            c.setFillColor(font_color)
-            c.setFont(font, font_size)
-            y_position = 750  # Сбрасываем позицию на новой странице
-            c.drawString(x_position, y_position, text)
-        y_position -= 20
+        width, height = letter
+
+        lines = simpleSplit(text, font, 12, width)
+        print(lines)
+        
+        for line in lines:
+            c.drawString(x_position, ypos, line)
+            ypos -= 20
+            # y_position -= 20
+            if y_position < 50 and ypos < 50:
+                c.showPage()
+                c.setFont(font, font_size)
+                y_position = 750
+                c.drawString(100, y_position, line)
+            y_position -= 20
+        
+        # c.setFillColor(font_color)
+        # c.setFont(font, font_size)
+        # c.drawString(x_position, ypos, text)
+        # if y_position < 50:  # Если информация не помещается, создаем новую страницу
+        #     c.showPage()
+        #     c.setFillColor(font_color)
+        #     c.setFont(font, font_size)
+        #     y_position = 750  # Сбрасываем позицию на новой странице
+        #     c.drawString(x_position, y_position, text)
+        # y_position -= 20
     
     
     # Добавляем информацию о тестируемом, лечащем враче и клинике
@@ -97,21 +116,48 @@ def create_pdf(test_data, answers_array, result_test, from_user_username, from_u
         add_info(f"{score}", 180, y_position, "DejaVu", 9, black)
         
     # Добавление вопросов и ответов из answersArray    
-    print(answers_array)
+    # print(answers_array)
+
     for i, answer_dict in enumerate(answers_array, start=1):
+        print(f'i={i} : answer_dict={answer_dict}')
         question_number = int(answer_dict['question'].split()[1]) - 1
-        question = test_data["questions"][question_number]
-        question_text = question["question"]
-        answer_index = int(answer_dict['answer'])
-        for ans in question["answers"]:
-            print(f"ans = {ans}")
-            # print(f"ans['text'] = {ans.text}")
-            if ans["value"] == answer_index:
-                answer_text = ans["text"]
-                print(f"answer_text = {answer_text}")
-            # answer_text = question["answers"][answer_index]["text"]
-        add_info(f"Вопрос {i}: {question_text}", 70, y_position, "DejaVu-Bold", 8, blue)
-        add_info(f"Ответ: {answer_text}", 100, y_position, "DejaVu-Italic", 8, black)
+        
+        print(f"answer_dict = {answer_dict}")
+        if test_name == 'Опросник гипомании HCL-32':
+            sections_number = int(answer_dict['section'])
+            section = test_data["sections"][sections_number]
+            print(f'sec= {section}')
+            question = section["questions"][question_number]
+            question_text = question["question"]
+            if question["type"] == "text":
+                answer_text = answer_dict['answer']
+            else:
+                answer_index = int(answer_dict['answer'])
+                for ans in question["answers"]:
+                    print(f"ans = {ans}")
+                    # print(f"ans['text'] = {ans.text}")
+                    if ans["value"] == answer_index:
+                        answer_text = ans["text"]
+                        print(f"answer_text = {answer_text}")
+                    # answer_text = question["answers"][answer_index]["text"]
+            if question_number + 1 == 1:
+                add_info(f"{section['section']}", 70, y_position, "DejaVu-Bold", 9, black)
+            add_info(f"Вопрос {question_number + 1}: {question_text}", 70, y_position, "DejaVu-Bold", 8, blue)
+            add_info(f"Ответ: {answer_text}", 100, y_position, "DejaVu-Italic", 8, black)
+        else:
+            question = test_data["questions"][question_number]
+            
+            question_text = question["question"]
+            answer_index = int(answer_dict['answer'])
+            for ans in question["answers"]:
+                print(f"ans = {ans}")
+                # print(f"ans['text'] = {ans.text}")
+                if ans["value"] == answer_index:
+                    answer_text = ans["text"]
+                    print(f"answer_text = {answer_text}")
+                # answer_text = question["answers"][answer_index]["text"]
+            add_info(f"Вопрос {i}: {question_text}", 70, y_position, "DejaVu-Bold", 8, blue)
+            add_info(f"Ответ: {answer_text}", 100, y_position, "DejaVu-Italic", 8, black)
     
     
     # # Добавление общего балла (GSI), индекс PSI и индекс PDSI
@@ -183,6 +229,9 @@ def get_total_scores(answersArray, test_data):
 
     result_test['total_score'] = total_score
     result_test['result_text'] = result_text
+    
+    result_test['Баллы'] = result_test.pop('total_score')
+    result_test['Описание'] = result_test.pop('result_text')
 
     return result_test
 
@@ -227,6 +276,11 @@ async def buy_process(web_app_message):
     
     if (test_name == 'SCL_90_R'):
         result_test = get_result_test_scl(answers_array, file_data)
+    elif (test_name == 'HCL_32'):
+        result_test = {}
+        result_test['Баллы'] = 'не учитываются'
+        result_test['Описание'] = 'Результат у лечащего врача'
+
     else:
         result_test = get_total_scores(answers_array, file_data)
     
